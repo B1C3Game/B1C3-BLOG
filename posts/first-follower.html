@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The First Follower | B1C3 Blog</title>
+  <meta name="description" content="The first follower changes a lone move into a movement. Practical invitation, not abstract branding.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="https://b1c3game.github.io/multi-agent-collab-test/" aria-label="B1C3 Home">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Blog</a>
+      <a href="https://b1c3game.github.io/multi-agent-collab-test/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="article-hero reveal">
+      <p class="eyebrow">Movement logic</p>
+      <h1>The First Follower</h1>
+      <p class="lead">The first follower validates the move, changes the social meaning, and makes the pattern legible to everyone else.</p>
+      <p class="post-date">Published: 2026-02-28</p>
+    </section>
+
+    <article class="panel post reveal">
+      
+      <div class="post-content">
+        <p>There's a video you should watch before reading this. It's three minutes long and it explains more about movements than any business book.</p>
+
+        <p>A guy starts dancing alone on a hill at a music festival. He looks ridiculous. Nobody joins. He keeps going. Then one person joins — and now there are two idiots dancing. Then a third. And somewhere between the third and the fifth, it stops being embarrassing and starts being a movement. Within a minute, hundreds of people are running to join.</p>
+
+        <p>The lesson: the leader didn't start the movement. The first follower did. The leader was just a lone weirdo until someone validated them by joining.</p>
+
+        <p><em>Search "first follower leadership lesson" on YouTube. Watch it. Then come back.</em></p>
+
+        <hr>
+
+        <h2>B1C3 Is the Guy Dancing Alone</h2>
+
+        <p>One person. One month. 35 repositories. A manifesto. A patent. Outreach to UNESCO. Code pushed to the wrong GitHub account that turned out to be the right one.</p>
+
+        <p>Nobody asked for any of it. Nobody approved it. Nobody was watching.</p>
+
+        <p>That was the first move. It's been made. Now the question is: who's second?</p>
+
+        <hr>
+
+        <h2>What You Can Actually Do</h2>
+
+        <p>This isn't "join our vision." This is: here's real work, right now, that needs a human.</p>
+
+        <h3>You Do CAD or 3D Scanning</h3>
+        <p>We're building intelligent point cloud compression — a tool that takes 30 million scanned dots and asks "how many do I actually need?" A flat wall is 50,000 dots. It should be 4.</p>
+
+        <p>Your domain expertise is the product. Algorithms detect shapes. You know what those shapes ARE — a DN150 pipe, a 90-degree elbow, a flange. That knowledge is the moat no algorithm replaces.</p>
+
+        <p><strong>What you'd do:</strong> Validate surface classifications. Label training data. Provide real scan data. Shape the product from the domain side.</p>
+
+        <h3>You Do ML / AI</h3>
+        <p>We need surface classification models trained on real point cloud data. The pipeline is documented — RANSAC for baseline, PointNet++ for the ML layer, Open3D and CGAL for processing.</p>
+
+        <p>Public datasets exist (ScanNet, S3DIS). Domain-specific labeled data doesn't — we're building it.</p>
+
+        <p><strong>What you'd do:</strong> Train models. Build the classification pipeline. Evaluate against traditional approaches. Push the accuracy where algorithms alone can't reach.</p>
+
+        <h3>You Do Frontend</h3>
+        <p>We need a 3D point cloud viewer — interactive, web-based, showing original vs. compressed side by side. Color-coded surfaces. Compression stats. Runs on a laptop and a tablet.</p>
+
+        <p><strong>What you'd do:</strong> Three.js or Deck.gl. WebGL rendering of large point sets. Dashboard for compression metrics. Make the invisible visible.</p>
+
+        <h3>You Do UX</h3>
+        <p>Our tools need to work for the 80% — people whose brains work differently. Current CAD and scanning tools are built for one cognitive profile. We're building for all of them.</p>
+
+        <p><strong>What you'd do:</strong> User research with real surveyors and engineers. Design the upload → process → download flow. Accessibility testing. WCAG 2.1 AA. Make complexity feel simple.</p>
+      </div>
+
+      <div class="post-nav">
+        <a href="../index.html" class="back-link">← Back to blog</a>
+      </div>
+    </article>
+  </main>
+
+  <footer id="contact" class="site-footer reveal">
+    <div class="motif" aria-hidden="true">
+      <svg viewBox="0 0 340 140" role="img" aria-label="Constraint network motif">
+        <defs>
+          <linearGradient id="motifSpokeFollower" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#334a5f"></stop>
+            <stop offset="100%" stop-color="#8fa4b7"></stop>
+          </linearGradient>
+          <radialGradient id="motifCenterFollower" cx="34%" cy="28%" r="72%">
+            <stop offset="0%" stop-color="#4b4b4b"></stop>
+            <stop offset="100%" stop-color="#111111"></stop>
+          </radialGradient>
+          <radialGradient id="motifNodeLightFollower" cx="35%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#f5efe4"></stop>
+            <stop offset="100%" stop-color="#c7d3dd"></stop>
+          </radialGradient>
+        </defs>
+        <g class="motif-spokes">
+          <polygon class="spoke" points="170,72 162,74 54,90 58,84" fill="url(#motifSpokeFollower)"></polygon>
+          <polygon class="spoke" points="170,72 172,64 116,42 110,46" fill="url(#motifSpokeFollower)"></polygon>
+          <polygon class="spoke" points="170,72 178,74 232,96 226,100" fill="url(#motifSpokeFollower)"></polygon>
+          <polygon class="spoke" points="170,72 176,66 292,56 290,62" fill="url(#motifSpokeFollower)"></polygon>
+        </g>
+        <g class="motif-nodes">
+          <circle class="node node-light" cx="56" cy="87" r="8" fill="url(#motifNodeLightFollower)"></circle>
+          <circle class="node node-light" cx="113" cy="44" r="7" fill="url(#motifNodeLightFollower)"></circle>
+          <circle class="node node-emphasis" cx="170" cy="72" r="14" fill="url(#motifCenterFollower)"></circle>
+          <circle class="node node-light" cx="229" cy="98" r="7" fill="url(#motifNodeLightFollower)"></circle>
+          <circle class="node node-light" cx="291" cy="59" r="8" fill="url(#motifNodeLightFollower)"></circle>
+        </g>
+      </svg>
+    </div>
+    <p>Contact: <a href="mailto:contact@b1c3.dev"><span aria-hidden="true">✉</span> contact@b1c3.dev</a> · <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub Repo</a> · <a href="https://b1c3game.github.io/multi-agent-collab-test/" target="_blank" rel="noreferrer">B1C3 Home</a></p>
+    <p class="micro">B1C3, systems that amplify 🧠</p>
+  </footer>
+</body>
+</html>

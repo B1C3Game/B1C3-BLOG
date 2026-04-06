@@ -1,0 +1,33 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts (if ever needed)
+dist/
+build/
+*.zip
+
+# Node (if ever used)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv
+
+# OS-specific
+.Spotlight-V100/
+.Trashes/
+ehthumbs.db

@@ -1,0 +1,48 @@
+@media (max-width: 840px) {
+  .cards,
+  .blog-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero,
+  .article-hero {
+    padding-top: 2.4rem;
+  }
+}
+
+@media (max-width: 560px) {
+  main,
+  .site-footer,
+  .site-header {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  h1 {
+    max-width: none;
+  }
+
+  .panel,
+  .card {
+    padding: 1rem;
+  }
+
+  nav {
+    gap: 0.7rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
