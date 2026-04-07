@@ -31,3 +31,6 @@ __pycache__/
 .Spotlight-V100/
 .Trashes/
 ehthumbs.db
+
+# Blog drafts
+posts/drafts/
