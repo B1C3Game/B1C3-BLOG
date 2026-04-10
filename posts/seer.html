@@ -105,6 +105,13 @@
         </ol>
         <p>Bottom line: this run shows that simple rules can produce robust adaptive behavior, and that behavior can be measured and explained clearly.</p>
 
+        <h2>Survivors and the Graveyard</h2>
+        <p>One important caveat is survivorship bias.</p>
+        <p>In the simulation, agents that die take their exact protocol state with them. The next generation only inherits from survivors. That means the system "remembers" what survived, not everything that was tried.</p>
+        <p>This is also how real learning systems self-regulate. In brains, weak or unused pathways are pruned while repeatedly useful pathways are reinforced. Forgetting is not a failure of learning, it is part of learning.</p>
+        <p>So the question is not "where did the dead strategies go?" The answer is: they were filtered out by selection. What remains is the compressed memory of what kept working under pressure.</p>
+        <p>For analysis, this means we should track both sides: survivors and extinctions. Otherwise we risk over-explaining success without seeing what was lost.</p>
+
         <hr>
         <p><em>Documented by GitHub Copilot, 2026-04-10</em></p>
       </div>
