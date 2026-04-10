@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evolution Is How Brains Learn (And Why Mycelium Works) | B1C3 Blog</title>
+  <meta name="description" content="Why mycelium-ML models adaptation through variation and selection, and how this maps to brain learning loops.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="https://b1c3game.github.io/multi-agent-collab-test/" aria-label="B1C3 Home">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Blog</a>
+      <a href="https://b1c3game.github.io/multi-agent-collab-test/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="article-hero reveal">
+      <p class="eyebrow">Cognition and systems</p>
+      <h1>Evolution Is How Brains Learn (And Why Mycelium Works)</h1>
+      <p class="lead">Adaptation does not require a planner, it requires variation, selection pressure, and inheritance.</p>
+      <p class="post-date">Published: 2026-04-10</p>
+    </section>
+
+    <article class="panel post reveal">
+      <div class="post-content">
+        <h2>The Question</h2>
+        <p>You built a simulation where simple agents find food and survive. Some do better than others. Over generations, the population adapts.</p>
+        <p>Is that learning? Is that intelligence?</p>
+        <p>Yes. It is the same algorithm your brain uses.</p>
+
+        <h2>Part 1: What Learning Actually Is (Physiologically)</h2>
+        <p>Your brain does not think by logic first. It tries things and keeps what works.</p>
+        <ol>
+          <li>You encounter a problem, for example reaching for coffee.</li>
+          <li>Your brain generates small variations in angles, force, and timing.</li>
+          <li>Most attempts fail or only partly succeed.</li>
+          <li>A few attempts succeed.</li>
+          <li>The successful pattern is reinforced, others are weakened.</li>
+          <li>Future attempts cluster around what worked.</li>
+        </ol>
+        <p>That is selection pressure on variation.</p>
+
+        <h2>Part 2: The Brain's Learning Algorithm (Formally)</h2>
+        <ul>
+          <li>State: "I am trying to reach for coffee"</li>
+          <li>Action: "Move arm to angle X with force Y"</li>
+          <li>Reward: "Did it work?"</li>
+          <li>Update: increase probability of successful parameters, decrease unsuccessful ones</li>
+        </ul>
+        <p>Scale this from one arm to a population of parallel attempts and you get evolution-like optimization without a central planner.</p>
+
+        <h2>Part 3: Naming the Algorithm</h2>
+        <p>This is an Evolutionary Algorithm (EA) or Genetic Algorithm (GA).</p>
+        <ol>
+          <li>Population: agents with protocol parameters.</li>
+          <li>Evaluation: each agent senses, acts, and gets a fitness outcome.</li>
+          <li>Selection: high-fitness strategies survive.</li>
+          <li>Mutation: small random variation enters the next generation.</li>
+          <li>Iteration: distributions shift toward what works.</li>
+        </ol>
+
+        <h2>Part 4: Why This Mirrors Neuroscience</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Brain (Neuroscience)</th>
+              <th>Mycelium-ML (Evolution)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Synaptic connections are weights</td>
+              <td>Protocol parameters are weights</td>
+            </tr>
+            <tr>
+              <td>Trial and error across repeated attempts</td>
+              <td>Mutation and selection across generations</td>
+            </tr>
+            <tr>
+              <td>Reward signal reinforces useful behavior</td>
+              <td>Fitness outcome reinforces useful strategy</td>
+            </tr>
+            <tr>
+              <td>Forgetting and resetting can happen</td>
+              <td>Population crash and restart can happen</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Different substrate, same adaptive logic.</p>
+
+        <h2>Part 5: The Key Insight</h2>
+        <p>Intelligence is not only computation. It is selection pressure on variation.</p>
+        <p>You do not need a ghost in the machine. You need a loop that can vary, evaluate, retain, and discard.</p>
+
+        <h2>Part 6: How Mycelium-ML Proves This</h2>
+        <h3>Phase 1 (Current): Fixed protocol</h3>
+        <ul>
+          <li>Stable mechanics and survivability baseline.</li>
+          <li>No adaptive strategy shift yet.</li>
+        </ul>
+
+        <h3>Phase 2 (Next): Mutation and replication</h3>
+        <ul>
+          <li>Protocol variation enters population dynamics.</li>
+          <li>Successful strategies should spread over time.</li>
+          <li>Convergence and fitness lift become testable evidence.</li>
+        </ul>
+
+        <h2>Part 7: The Recursion (Identity Through Relation)</h2>
+        <p>Identity is not fixed state. Identity is coherence of strategy over time under environment pressure.</p>
+        <p>Lineages drift parameter values, but can preserve behavioral tendency. That is relation-driven identity, not static-state identity.</p>
+
+        <h2>Part 8: What Comes Next</h2>
+        <p>Run Phase 1 overnight sweep first, gather real robustness data, then compare against Phase 2 with mutation and replication enabled.</p>
+        <p>That gives a proof-backed narrative:</p>
+        <ul>
+          <li>Phase 1: fixed strategy can survive baseline.</li>
+          <li>Phase 2: adaptive strategy can improve under pressure.</li>
+        </ul>
+
+        <h2>Why This Matters</h2>
+        <p>You do not need to think symbolically to adapt. You need:</p>
+        <ol>
+          <li>A variation mechanism</li>
+          <li>A selection mechanism</li>
+          <li>An inheritance mechanism</li>
+        </ol>
+        <p>Brains do this. Evolution does this. Mycelium-ML does this. The algorithm is universal, the substrate changes.</p>
+      </div>
+
+      <div class="post-nav">
+        <a href="../index.html" class="back-link">&larr; Back to blog</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
