@@ -34,3 +34,6 @@ ehthumbs.db
 
 # Blog drafts
 posts/drafts/
+
+# Separate repo managed independently
+mycelium-ML/

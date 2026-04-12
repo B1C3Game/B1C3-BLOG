@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unexplainable Knowledge | B1C3 Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="https://b1c3game.github.io/multi-agent-collab-test/">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Blog</a>
+      <a href="https://b1c3game.github.io/multi-agent-collab-test/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="article-hero reveal">
+      <p class="eyebrow">Simulation, Complexity, Emergence</p>
+      <h1>Unexplainable Knowledge</h1>
+      <p class="lead">Exploring how simple agent-based rules in a mycelium simulation create complex, layered, and sometimes unexplainable patterns—mirroring both nature and the mind.</p>
+      <p class="post-date">Published: YYYY-MM-DD</p>
+    </section>
+
+    <article class="panel post reveal">
+      <div class="post-content">
+        <h2>Introduction</h2>
+        <p>This post is inspired by a simulation that generates a very complex graph (see below). My initial interpretation was fragmented—I could sometimes grasp the patterns, but often needed to revisit the data to understand it. This is part of the point: you don’t need to understand everything at once. Focus on fragments, and ask: does this activity get me closer to my goal? Can I understand this piece of the complexity?</p>
+        <figure>
+          <img src="drafts/Figure_1.png" alt="Simulation Metrics Graph" style="max-width:100%;height:auto;">
+          <figcaption>Figure 1: Metrics from the mycelium simulation showing nested oscillations and emergent patterns.</figcaption>
+        </figure>
+
+        <h2>Interpreting the Graph</h2>
+        <h3>My Interpretation</h3>
+        <p>The clusters and settlement are in tandem. Both oscillate with a big amplitude at first, then smooth out a bit, but continue oscillating 10–30 times depending on perspective. There are oscillations within oscillations—one big wave, and that wave itself oscillates. Coherence jumps rapidly between 0.1 and 0.8, about every 10 generations. I don’t know what boom-bust cycles are.</p>
+        <h3>Wijak’s Interpretation</h3>
+        <p>Wijak describes this as <strong>nested oscillations</strong>—waves within waves, an emergent phenomenon. There’s no “boom-bust cycle” (population spikes and crashes) because the population is fixed. Instead:</p>
+        <ul>
+          <li><strong>Big wave:</strong> Clusters form, settle, dissolve over ~100 generations</li>
+          <li><strong>Medium wave:</strong> Settlement rises/falls over ~30 generations</li>
+          <li><strong>Fast wave:</strong> Coherence flips every ~10 generations (spores align, then scatter)</li>
+        </ul>
+        <p>This is the system finding rhythm. Clusters form, settle, drift apart, and new clusters form elsewhere.</p>
+
+        <h2>Copilot’s Explanation</h2>
+        <p><strong>User interpretation:</strong> You observe that the graph shows clusters and settlement values oscillating together, first with large swings, then gradually smoothing out. There are oscillations within oscillations—large waves with smaller, faster fluctuations on top. Coherence (how aligned the system is) jumps rapidly between 0.1 and 0.8, about every 10 generations. You mention not understanding “boom-bust cycles,” but you notice complex, layered patterns that are hard to fully grasp at once.</p>
+        <p><strong>Wijak’s interpretation:</strong> Wijak clarifies that you’re seeing “nested oscillations”—emergent behavior where there are waves within waves. The “boom-bust cycle” (population spikes and crashes) isn’t present because your population is fixed. Instead:</p>
+        <ul>
+          <li>The big wave: Clusters form, settle, and dissolve over about 100 generations.</li>
+          <li>Medium wave: Settlement rises and falls over about 30 generations.</li>
+          <li>Fast wave: Coherence flips every ~10 generations as spores align and scatter.</li>
+        </ul>
+        <p>This is described as the system finding its rhythm, with clusters forming, settling, drifting apart, and reforming elsewhere.</p>
+
+        <h2>What is this experiment trying to prove?</h2>
+        <p>This experiment simulates and analyzes the collective behavior of mycelium (fungal) agents using a minimal, hierarchical container architecture. The main goal is to observe how simple rules at the spore (agent) and cluster levels lead to complex, emergent patterns over time.</p>
+        <ul>
+          <li>Track how spores group into clusters and how these clusters form, settle, and dissolve.</li>
+          <li>Measure system-wide properties like coherence (how aligned the agents are) and settlement (how many clusters are stable).</li>
+          <li>Reveal emergent oscillatory patterns—nested waves of organization and disorganization—without explicit “boom-bust” cycles, since the population is fixed.</li>
+          <li>Test if these patterns are robust across different random seeds (i.e., whether the rhythms repeat or differ with each run).</li>
+        </ul>
+        <p>Ultimately, it’s exploring how simple agent-based rules can generate complex, layered dynamics in a simulated ecosystem.</p>
+
+        <h2>How can you use this?</h2>
+        <ol>
+          <li><strong>Scientific Exploration:</strong>
+            <ul>
+              <li>Study emergent behavior in decentralized systems.</li>
+              <li>Test how small rule changes affect large-scale patterns.</li>
+              <li>Compare simulated results to real biological systems (e.g., fungal growth, cellular automata).</li>
+            </ul>
+          </li>
+          <li><strong>Algorithm Design:</strong>
+            <ul>
+              <li>Inspire new algorithms for distributed computing, swarm robotics, or optimization by mimicking mycelium-like coordination.</li>
+            </ul>
+          </li>
+          <li><strong>Education & Visualization:</strong>
+            <ul>
+              <li>Use the simulation to teach concepts like emergence, self-organization, and complexity.</li>
+              <li>Visualize how local interactions create global order (or disorder).</li>
+            </ul>
+          </li>
+          <li><strong>Art & Creativity:</strong>
+            <ul>
+              <li>Generate organic, evolving patterns for digital art or music.</li>
+              <li>Explore the aesthetics of complexity and rhythm in nature-inspired systems.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2>Analogies to Human Cognition and Physiology</h2>
+        <p>This experiment’s dynamics can be compared to processes in the human mind and body:</p>
+        <ul>
+          <li><strong>Cognition:</strong>
+            <ul>
+              <li>Just as spores form clusters, individual thoughts or neurons can synchronize into coherent patterns (e.g., brainwaves, moments of insight).</li>
+              <li>The nested oscillations resemble how our attention, moods, or ideas fluctuate—sometimes stable, sometimes chaotic, with rhythms at multiple timescales.</li>
+            </ul>
+          </li>
+          <li><strong>Physiology:</strong>
+            <ul>
+              <li>The body’s systems (like heartbeats, breathing, or circadian rhythms) show layered oscillations, much like the simulation’s waves within waves.</li>
+              <li>Groups of cells (e.g., in the heart or gut) coordinate locally to produce global rhythms, echoing how clusters form and dissolve in the model.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>In both cases, simple local interactions (between neurons, cells, or agents) can give rise to complex, adaptive, and sometimes unpredictable global behavior—mirroring the emergent patterns seen in the mycelium simulation.</p>
+      </div>
+      <div class="post-nav">
+        <a href="../index.html" class="back-link">← Back to blog</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
