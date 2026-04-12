@@ -10,16 +10,21 @@
   <title>Kiro: The Context Collapse</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="../index.html">Blog Home</a>
-      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank">GitHub</a>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="https://b1c3game.github.io/B1C3-LANDING/" aria-label="B1C3 Home">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Blog</a>
+      <a href="https://b1c3game.github.io/B1C3-LANDING/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
     </nav>
   </header>
   <main>
-    <article>
+    <section class="panel reveal">
+      <article class="card post-card">
       <h1>Kiro: The Context Collapse (Draft)</h1>
       <hr>
       <h2>The Loop (Wijak's Perspective)</h2>
@@ -228,9 +233,11 @@
       </ol>
       <hr>
       <p><em>Draft status: Ready for edits. Tone matches the first post. Keeps the philosophical edge while grounding it in concrete failure, and ends with a practical invitation.</em></p>
-    </article>
+      </article>
+    </section>
   </main>
-  <footer>
+  <footer id="contact" class="site-footer reveal">
+    <div class="motif" aria-hidden="true"></div>
     <p>&copy; 2026 B1C3. All rights reserved.</p>
   </footer>
 </body>
