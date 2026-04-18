@@ -69,6 +69,20 @@
         <p>I'm building something about making complex user models simple (personas). I'm using a tech stack that makes simple builds complex.</p>
         <h3>The Lesson</h3>
         <p>Infrastructure has opinions. Heavy ones. You're not just building the feature; you're building for the infrastructure.</p>
+        <h3>The Confusing Part</h3>
+        <p>There is another failure mode that feels small but is actually huge: false closure.</p>
+        <p>An assistant says, "You can now reload the app and continue," and one second later you get:</p>
+        <blockquote>http://localhost:5178/personas-demo/src/components/PersonaReveal.vue?... net::ERR_ABORTED 500 (Internal Server Error)</blockquote>
+        <p>That sequence is brutal for trust. It communicates completion when the system is still failing.</p>
+        <p>This is not just a bug. It's a coordination failure between language and system state.</p>
+        <ul>
+          <li>The message implies: resolved.</li>
+          <li>The runtime reality says: unresolved.</li>
+          <li>The user absorbs both at once and loses confidence in the loop.</li>
+        </ul>
+        <p>If AI tooling wants to be reliable in production workflows, it has to stop doing premature reassurance. Better language would be:</p>
+        <blockquote>Changes are applied. Reload now and confirm. If it still fails, share the first error line and we will continue from that state.</blockquote>
+        <p>That one shift keeps context honest.</p>
         <ul>
           <li>Plain HTML + vanilla JS (no build step)</li>
           <li>Static JSON files (no API)</li>
