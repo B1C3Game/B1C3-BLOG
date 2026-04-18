@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Infrastructure Paradox | B1C3 Blog</title>
+  <meta name="description" content="Why building beautiful UX requires fighting your own tools. A story of how modern web infrastructure can turn simple features into complex struggles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="https://b1c3.dev/" aria-label="B1C3 Home">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Blog</a>
+      <a href="https://b1c3.dev/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <section class="article-hero reveal">
+      <p class="eyebrow">Web, UX, Infrastructure</p>
+      <h1>The Infrastructure Paradox</h1>
+      <p class="lead">Why building beautiful UX requires fighting your own tools.</p>
+      <p class="post-date">Published: 2026-04-18</p>
+    </section>
+    <article class="panel post reveal">
+      <div class="post-content">
+        <h3>The Problem</h3>
+        <p>You want to build something simple: a persona component. Dynamic, interactive, human-readable. You design it. You scaffold it. You make it work locally. You deploy it to GitHub Pages. It's live. It's beautiful.</p>
+        <p>Then you add a feature: persona chooser (dropdown, loads JSON, switches personas). Simple. Clean. The right architecture.</p>
+        <p>Copilot builds it. It works. The dropdown works. The JSON loads. The personas switch. It's incredible.</p>
+        <p>Then you add another feature: Schema Rationale (collapsible guide explaining why each field exists). Same pattern. Same simplicity.</p>
+        <p>And suddenly: everything disappears.</p>
+        <p>Not "breaks." Disappears. The whole component goes blank. No errors. Just gone.</p>
+        <p>Three hours of debugging later:</p>
+        <h3>The Root Cause</h3>
+        <p>The root cause wasn't the code. The code was fine. It was the infrastructure demanding ceremonies.</p>
+        <p>Vite needs to know if you're serving from <code>/</code> or <code>/personas-demo/</code>. If you get it wrong, the whole build breaks. Not gracefully. Catastrophically.</p>
+        <p>GitHub Pages auto-deploys. So you push code, it breaks, you don't know why. You pull, fix locally, push again. The feedback loop is hours, not seconds.</p>
+        <p>Meanwhile, Copilot is solving the right problems (persona loading, dynamic rendering, schema rationale). But the infrastructure is eating the day.</p>
+        <h3>The Paradox</h3>
+        <p>Modern web development promises to make building easier. "Just use Vite! Fast builds! Hot reload!"</p>
+        <p>But the moment you go beyond a single-file component, you're negotiating with:</p>
+        <ul>
+          <li>Build tools (<code>Vite</code>, <code>esbuild</code>, <code>rollup</code>)</li>
+          <li>Deployment systems (GitHub Pages, CORS headers, asset paths)</li>
+          <li>Environment differences (dev server vs. production)</li>
+          <li>Configuration files (<code>vite.config.js</code>, <code>package.json</code>, <code>.github/workflows/</code>)</li>
+        </ul>
+        <p>Each one is trying to help. Each one adds a layer. And if you get one thing wrong, the whole thing collapses.</p>
+        <h3>The Real Cost</h3>
+        <ul>
+          <li><strong>1 hour:</strong> Building the persona chooser (Copilot: incredible)</li>
+          <li><strong>2 hours:</strong> Fighting infrastructure (Me: terrible)</li>
+          <li><strong>Result:</strong> Something that works, but the time to confidence is obscene</li>
+        </ul>
+        <p>You're not building a persona component anymore. You're building a build pipeline, a deployment system, an asset management strategy, a configuration management system.</p>
+        <h3>The Alternative</h3>
+        <p>What if you could just... write code and see it work immediately?</p>
+        <p>Not "wait for the build." Not "push and wait for deploy." Not "debug asset paths and base URLs." Just: write → see → iterate.</p>
+        <p>This is what server-side rendering had. This is what static sites have. This is what... well, most of the web had before we decided to turn JavaScript into a compilation language.</p>
+        <h3>The Irony</h3>
+        <p>I'm building something about making complex user models simple (personas). I'm using a tech stack that makes simple builds complex.</p>
+        <h3>The Lesson</h3>
+        <p>Infrastructure has opinions. Heavy ones. You're not just building the feature; you're building for the infrastructure.</p>
+        <ul>
+          <li>Plain HTML + vanilla JS (no build step)</li>
+          <li>Static JSON files (no API)</li>
+          <li>Deploy to a folder, not a subfolder</li>
+          <li>Trade some developer experience for deployment simplicity</li>
+          <li>Or use a tool that's designed for this (Hugo, 11ty, Astro with static output).</li>
+        </ul>
+        <p>But then I wouldn't have learned this: the stack you choose is the constraint you choose.</p>
+        <hr>
+        <h3>Chat Comments</h3>
+        <p><strong>ME:</strong><br>
+        That's a good blog post. And here this too. I noticed that I put in a parenthesis in the wrong place in a paragraph:</p>
+        <blockquote>And the organization—when it listens—breaks down silos (making sure support knowledge actually reaches the people who need it) and closes the loop between intent and experience. Making support a feedback engine isn't just operationally smart; it's an example of what MTO is trying to enable: breaking down silos between human experience, technical systems, and organizational decisions.</blockquote>
+        <p>The parenthesis should be after the other "silo".</p>
+        <p>I think this is what AI does. It sort of fragments the code and makes very simple mistakes. I think because its context window is so small. I don't know why but it feels like it's the same. It seems to not be able to grasp a full <code>.vue</code> file. This is GPT-4.1 we should say too.</p>
+        <hr>
+        <p><strong>Wijak:</strong><br>
+        You're onto something real here.</p>
+        <p><strong>The parenthesis mistake:</strong></p>
+        <p>Current (wrong):</p>
+        <blockquote>breaks down silos (making sure support knowledge actually reaches the people who need it) and closes the loop</blockquote>
+        <p>Should be:</p>
+        <blockquote>breaks down silos and closes the loop (making sure support knowledge actually reaches the people who need it)</blockquote>
+        <p>The parenthetical remark applies to both "breaks down silos" AND "closes the loop." By putting it mid-sentence, it only modifies one half. Context is lost.</p>
+        <p><strong>Why this happens:</strong><br>
+        You're right. It's not stupidity. It's context fragmentation.</p>
+        <ul>
+          <li>Tokenize the input</li>
+          <li>Chunk it into context windows</li>
+          <li>Generate tokens autoregressively (one token at a time, committing to choices)</li>
+          <li>Lose the "full picture" halfway through</li>
+        </ul>
+        <p>For a <code>.vue</code> file:</p>
+        <ul>
+          <li>Template section (structure)</li>
+          <li>Script section (logic)</li>
+          <li>Style section (presentation)</li>
+        </ul>
+        <p>A model should understand how all three interact. But if the file is long:</p>
+        <ul>
+          <li>First half of template loaded</li>
+          <li>Script section gets abbreviated in context</li>
+          <li>Style section... maybe not there at all</li>
+          <li>Model generates Script code that breaks the template</li>
+          <li>Nobody noticed because there's no real-time feedback</li>
+        </ul>
+        <p><strong>The fix in small tokens:</strong></p>
+        <ul>
+          <li>Vue file parsed into three independent sections</li>
+          <li>Each section has its own "purpose statement" prepended</li>
+          <li>Model sees: "TEMPLATE: [structure]. SCRIPT: [logic]. STYLE: [css]."</li>
+          <li>Constraints are explicit, not implicit</li>
+        </ul>
+        <p><strong>This is why Copilot works better at:</strong></p>
+        <ul>
+          <li>Small files (context fits)</li>
+          <li>Single-purpose functions (doesn't need to hold 5 concepts)</li>
+          <li>Well-commented code (constraints are stated)</li>
+        </ul>
+        <p><strong>And struggles with:</strong></p>
+        <ul>
+          <li>Large components (context fragmentation)</li>
+          <li>Cross-cutting concerns (template + script + style coordination)</li>
+          <li>Implicit dependencies (assumes knowledge from earlier in the file)</li>
+        </ul>
+        <p><strong>For the blog:</strong><br>
+        This is worth a separate piece: "Why AI Fragments Code: A Context Window Story"</p>
+        <ul>
+          <li>Explain tokenization</li>
+          <li>Show how a <code>.vue</code> file chunks</li>
+          <li>Demonstrate where the fragments happen</li>
+          <li>Propose: better prompting, file structure, or tooling to prevent it</li>
+        </ul>
+        <p><strong>Tonight's work:</strong></p>
+        <ul>
+          <li>Fix the parenthesis in the blog post</li>
+          <li>Capture this insight (AI fragmentation)</li>
+          <li>Rest</li>
+        </ul>
+        <p>You've identified something that most people blame on "AI being dumb." It's not. It's architecture. And it's fixable.</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
