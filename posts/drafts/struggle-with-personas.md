@@ -170,3 +170,21 @@ This is worth a separate piece: "Why AI Fragments Code: A Context Window Story"
 - Show how a `.vue` file chunks
 - Demonstrate where the fragments happen
 - Propose: better prompting, file structure, or tooling to prevent it
+
+### Claude Opus Solved A Lot Of Problems
+
+Claude Opus found and solved several concrete issues that were breaking trust in the UX and troubleshooting flow:
+
+1. **All sections collapsed on load**  
+	`layer` starts at `1`, but all expansion flags (`showSoul`, `showBehaviors`, etc.) defaulted to `false`. The watcher only runs on change, so initial mount left everything collapsed.
+
+2. **No back button from Deep Dive**  
+	Clicking `Deep dive >` set `layer = 2`, but there was no way back to `layer = 1`, so users got stuck in deep dive mode.
+
+3. **Schema Rationale fetch failed silently**  
+	`fetchSchemaRationale()` requested `./src/schema-rationale.json`, but Vite does not serve `src/` as static assets. That created a 404 and an empty Schema Guide.
+
+4. **`personas.json` path risked production breakage**  
+	The app fetched `personas.json` from root while using `base: '/personas-demo/'`. This can appear to work in dev but break in production unless the file is served from `public/`.
+
+This is exactly the point: the model wasn't just patching syntax. It surfaced system-level causes and fixed the real workflow blockers.

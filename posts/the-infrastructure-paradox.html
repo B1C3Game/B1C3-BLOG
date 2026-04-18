@@ -166,6 +166,15 @@
           <li>Rest</li>
         </ul>
         <p>You've identified something that most people blame on "AI being dumb." It's not. It's architecture. And it's fixable.</p>
+        <h3>Claude Opus Solved A Lot Of Problems</h3>
+        <p>Claude Opus found and solved several concrete issues that were breaking trust in the UX and troubleshooting flow:</p>
+        <ol>
+          <li><strong>All sections collapsed on load:</strong> <code>layer</code> starts at <code>1</code>, but all expansion flags (<code>showSoul</code>, <code>showBehaviors</code>, etc.) defaulted to <code>false</code>. The watcher only runs on change, so initial mount left everything collapsed.</li>
+          <li><strong>No back button from Deep Dive:</strong> Clicking <code>Deep dive &gt;</code> set <code>layer = 2</code>, but there was no way back to <code>layer = 1</code>, so users got stuck in deep dive mode.</li>
+          <li><strong>Schema Rationale fetch failed silently:</strong> <code>fetchSchemaRationale()</code> requested <code>./src/schema-rationale.json</code>, but Vite does not serve <code>src/</code> as static assets. That created a 404 and an empty Schema Guide.</li>
+          <li><strong><code>personas.json</code> path risked production breakage:</strong> The app fetched <code>personas.json</code> from root while using <code>base: '/personas-demo/'</code>. This can appear to work in dev but break in production unless the file is served from <code>public/</code>.</li>
+        </ol>
+        <p>This is exactly the point: the model wasn't just patching syntax. It surfaced system-level causes and fixed the real workflow blockers.</p>
       </div>
     </article>
   </main>
