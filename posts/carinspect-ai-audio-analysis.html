@@ -33,6 +33,59 @@
         <p><strong>The result?</strong> Buyers either overpay for cars with hidden mechanical issues, or they walk away from good deals because they're too uncertain.</p>
         <p>We're building <strong>CarInspect</strong>—a mobile app that puts a pocket mechanic in your phone. Using real-time audio analysis, model-specific checklists, and crowdsourced training data, we're making it possible for anyone to confidently inspect a used car before they buy.</p>
         <hr>
+                <h2>Development Roadmap</h2>
+                <h3>Phase 1: MVP (Months 1-6)</h3>
+                <p><strong>Goal:</strong> Proof of concept with engine knock detection</p>
+                <p><strong>Deliverables:</strong></p>
+                <ul>
+                  <li>Mobile app (iOS + Android)</li>
+                  <li>Audio capture & preprocessing</li>
+                  <li>Basic ML model for knock detection</li>
+                  <li>10 car models in database</li>
+                  <li>User authentication</li>
+                  <li>Basic reporting</li>
+                </ul>
+                <p><strong>Team:</strong> 2 mobile engineers, 1 ML engineer, 1 backend engineer, 1 product manager</p>
+                <p><strong>Cost:</strong> ~2.5 million SEK</p>
+                <p><strong>Timeline:</strong></p>
+                <ul>
+                  <li>Month 1-2: App architecture, audio pipeline setup</li>
+                  <li>Month 2-3: ML model training (using public datasets)</li>
+                  <li>Month 3-4: Integration, testing</li>
+                  <li>Month 4-5: Beta testing with 100 users</li>
+                  <li>Month 5-6: Launch on App Store/Play Store</li>
+                </ul>
+                <h3>Phase 2: Expansion (Months 7-12)</h3>
+                <p><strong>Goal:</strong> Scale to 10,000 users, expand car model database</p>
+                <p><strong>Deliverables:</strong></p>
+                <ul>
+                  <li>500+ car model</li>
+                </ul>
+                <hr>
+                <h3>Phase 3: Scale (Months 13-24)</h3>
+                <ul>
+                  <li>Months 13-15: OBD-II Integration</li>
+                  <li>OBD-II scanner integration</li>
+                  <li>Real-time engine diagnostics</li>
+                  <li>Correlation with audio analysis</li>
+                  <li>Expanded anomaly detection</li>
+                  <li>Months 15-18: Marketplace Integration</li>
+                  <li>Blocket.se API integration</li>
+                  <li>AutoTrader integration</li>
+                  <li>One-click inspection for listings</li>
+                  <li>Price recommendations</li>
+                  <li>Months 18-21: International Expansion</li>
+                  <li>UK market entry</li>
+                  <li>German market entry</li>
+                  <li>Norwegian market entry</li>
+                  <li>Localization (language, car models, regulations)</li>
+                  <li>Months 21-24: Advanced Features</li>
+                  <li>Predictive maintenance (estimate time to failure)</li>
+                  <li>Insurance partnerships</li>
+                  <li>Dealership dashboard v2</li>
+                  <li>API for third-party integrations</li>
+                </ul>
+                <hr>
         <h2>Appendix G: Team & Hiring Plan</h2>
         <h3>Current Team</h3>
         <ul>
@@ -114,374 +167,6 @@
                                                             <li><strong>Data retention:</strong> Users can delete data anytime</li>
                                                             <li><strong>Data portability:</strong> Users can export their inspection history</li>
                                                             <li><strong>Privacy policy:</strong> Clear, transparent, updated regularly</li>
-                                                            <li><strong>DPA:</strong> Data Processing Agreement with cloud providers</li>
-                                                          </ul>
-                                                          <h3>Liability & Disclaimers</h3>
-                                                          <ul>
-                                                            <li><strong>Clear disclaimer:</strong> "This app is not a substitute for professional inspection"</li>
-                                                            <li><strong>Liability waiver:</strong> We're not responsible for missed issues</li>
-                                                            <li><strong>Insurance:</strong> Professional liability insurance (E&O)</li>
-                                                            <li><strong>Terms of service:</strong> Clear terms covering usage, limitations, liability</li>
-                                                          </ul>
-                                                          <h3>Audio Rights & Licensing</h3>
-                                                          <ul>
-                                                            <li><strong>User grants license:</strong> To use audio for ML training (opt-in)</li>
-                                                            <li><strong>Anonymization:</strong> No personal identifiers in audio</li>
-                                                            <li><strong>Revocation:</strong> Users can revoke sharing anytime</li>
-                                                            <li><strong>Attribution:</strong> Users credited in "Sound Library" (optional)</li>
-                                                          </ul>
-                                                          <hr>
-                                                  <h2>Appendix D: Success Metrics & KPIs</h2>
-                                                  <h3>User Metrics</h3>
-                                                  <ul>
-                                                    <li><strong>Downloads:</strong> 50,000 (Year 1) → 500,000 (Year 3)</li>
-                                                    <li><strong>Active Users:</strong> 10,000 (Year 1) → 150,000 (Year 3)</li>
-                                                    <li><strong>Retention:</strong> 40%+ monthly active users</li>
-                                                    <li><strong>Engagement:</strong> 70% of users complete full inspection</li>
-                                                  </ul>
-                                                  <h3>Product Metrics</h3>
-                                                  <ul>
-                                                    <li><strong>Knock detection accuracy:</strong> 85%+ vs. professional assessment</li>
-                                                    <li><strong>Analysis time:</strong> &lt;10 seconds (end-to-end)</li>
-                                                    <li><strong>App uptime:</strong> 99.5%+</li>
-                                                    <li><strong>Audio library size:</strong> 1000+ samples per car model</li>
-                                                  </ul>
-                                                  <h3>Business Metrics</h3>
-                                                  <ul>
-                                                    <li><strong>Premium conversion:</strong> 5% (Year 1) → 10% (Year 3)</li>
-                                                    <li><strong>Premium ARPU:</strong> 99 SEK/month</li>
-                                                    <li><strong>Dealership adoption:</strong> 10 (Year 1) → 100 (Year 2)</li>
-                                                    <li><strong>Customer acquisition cost:</strong> &lt;50 SEK</li>
-                                                    <li><strong>Lifetime value:</strong> &gt;500 SEK</li>
-                                                  </ul>
-                                                  <h3>Financial Metrics</h3>
-                                                  <ul>
-                                                    <li><strong>Break-even:</strong> Month 18-20</li>
-                                                    <li><strong>Year 1 revenue:</strong> 5.9M SEK (conservative)</li>
-                                                    <li><strong>Year 3 revenue:</strong> 193.5M SEK (conservative)</li>
-                                                    <li><strong>Gross margin:</strong> 70%+ (software business)</li>
-                                                    <li><strong>Net margin:</strong> 40%+ (Year 3)</li>
-                                                  </ul>
-                                                  <hr>
-                                          <h2>Appendix C: FAQ</h2>
-                                          <h3>For Investors</h3>
-                                          <p><strong>Q: Why audio analysis? Why not just use OBD-II diagnostics?</strong><br>
-                                          A: OBD-II only shows error codes (which may not be set yet). Audio analysis detects mechanical issues before they trigger error codes. Combined, they're powerful. We'll integrate OBD-II in Phase 3.</p>
-                                          <p><strong>Q: What's your moat? Can't competitors just copy this?</strong><br>
-                                          A: Our moat is data. The more users we have, the more audio samples we collect, the better our model becomes. This creates a virtuous cycle that's hard to replicate. Plus, we're building brand trust early.</p>
-                                          <p><strong>Q: What's your path to profitability?</strong><br>
-                                          A: B2C freemium (99 SEK/month premium) + B2B dealership licensing (5,000-10,000 SEK/month). We break even in Month 18-20 and hit 181.5M SEK net profit by Year 3 (conservative).</p>
-                                          <p><strong>Q: Who are your customers?</strong><br>
-                                          A: Primary: Private car buyers (non-technical, want confidence). Secondary: Dealerships (want to certify cars, build trust). Tertiary: Car enthusiasts (want to know their car's health).</p>
-                                          <p><strong>Q: What's your go-to-market strategy?</strong><br>
-                                          A: Launch with early adopters (car forums, Reddit), then scale via app store optimization and partnerships with Blocket.se, insurance companies, and dealerships.</p>
-                                          <p><strong>Q: What are the risks?</strong><br>
-                                          A: Model accuracy (mitigated by training on diverse data), user adoption (mitigated by strong product-market fit), competition (mitigated by data moat), regulatory (GDPR compliant from day 1).</p>
-                                          <h3>For Users</h3>
-                                          <p><strong>Q: Is this app a substitute for a professional inspection?</strong><br>
-                                          A: No. This app is a screening tool to help you make informed decisions. For major purchases, always get a professional inspection.</p>
-                                          <p><strong>Q: How accurate is the knock detection?</strong><br>
-                                          A: Our target is 85%+ accuracy vs. professional mechanic assessment. We're training on diverse data and continuously improving.</p>
-                                          <p><strong>Q: What if the app says my car is fine but it has problems?</strong><br>
-                                          A: This is possible (false negative). That's why we recommend professional inspection for cars with high mileage or unknown history. The app is a first-pass screening tool.</p>
-                                          <p><strong>Q: Can I use this app offline?</strong><br>
-                                          A: Checklists work offline. Audio analysis requires internet (to send audio to our server for processing).</p>
-                                          <p><strong>Q: What happens to my audio data?</strong><br>
-                                          A: By default, your audio is deleted after analysis. You can opt-in to share it (anonymized) to help train our model. You can delete your data anytime.</p>
-                                          <p><strong>Q: How much does it cost?</strong><br>
-                                          A: Free tier: 3 inspections/month. Premium: 99 SEK/month or 799 SEK/year for unlimited inspections.</p>
-                                          <p><strong>Q: Which cars does the app support?</strong><br>
-                                          A: MVP launches with 10 popular models (Volvo V40, VW Golf, etc.). We'll expand to 500+ models by Month 12 and 20,000+ by Year 2.</p>
-                                          <p><strong>Q: Can I use this for my own car?</strong><br>
-                                          A: Yes! Many users will use this to monitor their car's health over time.</p>
-                                          <h3>For Dealerships</h3>
-                                          <p><strong>Q: How does the dealership program work?</strong><br>
-                                          A: You get a dealership license (5,000-10,000 SEK/month), branded reports, bulk inspection tools, and API access. You can certify your used cars and build buyer trust.</p>
-                                          <p><strong>Q: Can I white-label the app?</strong><br>
-                                          A: Not in MVP, but we're open to partnerships in Phase 2+.</p>
-                                          <p><strong>Q: What's the ROI for dealerships?</strong><br>
-                                          A: Reduced returns (fewer buyers discovering hidden issues after purchase), faster sales (buyers feel confident), premium pricing (certified cars sell for more).</p>
-                                          <hr>
-                                        <h2>Appendix B: Competitive Analysis</h2>
-                                        <h3>Market Competitors</h3>
-                                        <table>
-                                          <thead>
-                                            <tr>
-                                              <th>Competitor</th>
-                                              <th>Offering</th>
-                                              <th>Limitations</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr><td>Blocket.se</td><td>Car listings + basic inspection tools</td><td>Limited to listings, no audio analysis</td></tr>
-                                            <tr><td>Professional mechanics</td><td>Full inspection (2,000-5,000 SEK)</td><td>Expensive, slow, requires scheduling</td></tr>
-                                            <tr><td>OBD-II scanner apps</td><td>Engine error codes</td><td>Only shows codes, no audio analysis</td></tr>
-                                            <tr><td>YouTube tutorials</td><td>DIY inspection guides</td><td>Requires expertise, time-consuming</td></tr>
-                                            <tr><td>Insurance companies</td><td>Pre-purchase inspection (some)</td><td>Limited availability, expensive</td></tr>
-                                          </tbody>
-                                        </table>
-                                        <h3>Our Competitive Advantages</h3>
-                                        <ol>
-                                          <li><strong>Audio Analysis:</strong> Unique technology for detecting knock and anomalies</li>
-                                          <li><strong>Accessibility:</strong> Designed for non-technical users (plain language, simple UI)</li>
-                                          <li><strong>Speed:</strong> Results in 10 seconds vs. hours for professional inspection</li>
-                                          <li><strong>Cost:</strong> Free/cheap vs. 2,000-5,000 SEK for professional</li>
-                                          <li><strong>Crowdsourced Data:</strong> Improves over time with user contributions</li>
-                                          <li><strong>Model-Specific:</strong> Tailored guidance for each car's known issues</li>
-                                          <li><strong>Privacy-First:</strong> Opt-in data sharing, anonymized</li>
-                                        </ol>
-                                        <hr>
-                                <h2>Development Roadmap</h2>
-                                <h3>Phase 1: MVP (Months 1-6)</h3>
-                                <p><strong>Goal:</strong> Proof of concept with engine knock detection</p>
-                                <p><strong>Deliverables:</strong></p>
-                                        <h2>Appendix A: Technical Deep Dive</h2>
-                                        <h3>Audio Processing Pipeline</h3>
-                                        <p><strong>Step 1: Capture</strong></p>
-                                        <ul>
-                                          <li>User records 45-60 second audio clip via phone microphone</li>
-                                          <li>Real-time waveform visualization shows audio is being captured</li>
-                                          <li>Metadata captured: timestamp, GPS location, phone model</li>
-                                        </ul>
-                                        <p><strong>Step 2: Preprocessing</strong></p>
-                                        <ul>
-                                          <li>Noise reduction (spectral subtraction to remove background noise)</li>
-                                          <li>Normalization (peak or RMS normalization to 0dB)</li>
-                                          <li>Resampling to 16 kHz (standard for audio ML)</li>
-                                          <li>Segmentation into 1-second windows for analysis</li>
-                                        </ul>
-                                        <p><strong>Step 3: Feature Extraction</strong></p>
-                                        <ul>
-                                          <li><strong>MFCC (Mel-Frequency Cepstral Coefficients):</strong> 13-40 coefficients capturing human-perceived frequency</li>
-                                          <li><strong>Spectral features:</strong> Centroid, rolloff, bandwidth (identify frequency content)</li>
-                                          <li><strong>Temporal features:</strong> Zero-crossing rate, RMS energy (detect transients like knock)</li>
-                                          <li><strong>Onset detection:</strong> Identify sudden changes (characteristic of knock)</li>
-                                        </ul>
-                                        <p><strong>Step 4: ML Model Inference</strong></p>
-                                        <ul>
-                                          <li>Input: Feature vector (50-100 dimensions)</li>
-                                          <li>Model: CNN (Convolutional Neural Network) trained on 1000+ labeled samples</li>
-                                          <li>Output: Knock probability (0-1) + confidence score</li>
-                                        </ul>
-                                        <p><strong>Step 5: Post-Processing</strong></p>
-                                        <ul>
-                                          <li>Temporal smoothing (reduce false positives from single frames)</li>
-                                          <li>Confidence adjustment based on model uncertainty</li>
-                                          <li>Result formatting: "Knock detected (78% confidence)"</li>
-                                        </ul>
-                                        <h3>ML Model Architecture</h3>
-                                        <pre><code>Input (1, 50)
-                                <ul>
-                                  <li>Mobile app (iOS + Android)</li>
-                                  <li>Audio capture & preprocessing</li>
-                                  <li>Basic ML model for knock detection</li>
-                                  <li>10 car models in database</li>
-                                  <li>User authentication</li>
-                                  <li>Basic reporting</li>
-                                </ul>
-                                <p><strong>Team:</strong> 2 mobile engineers, 1 ML engineer, 1 backend engineer, 1 product manager</p>
-                                <p><strong>Cost:</strong> ~2.5 million SEK</p>
-                                <p><strong>Timeline:</strong></p>
-                                <ul>
-                                  <li>Month 1-2: App architecture, audio pipeline setup</li>
-                                        <p><strong>Training Details:</strong></p>
-                                        <ul>
-                                          <li><strong>Dataset:</strong> 1000+ labeled audio samples (healthy vs. knock)</li>
-                                          <li><strong>Split:</strong> 70% train, 15% validation, 15% test</li>
-                                          <li><strong>Optimizer:</strong> Adam (learning rate 0.001)</li>
-                                          <li><strong>Loss:</strong> Binary cross-entropy</li>
-                                          <li><strong>Epochs:</strong> 50</li>
-                                          <li><strong>Batch size:</strong> 32</li>
-                                        </ul>
-                                        <p><strong>Target Metrics:</strong></p>
-                                        <ul>
-                                          <li>Precision: 90%+ (minimize false positives)</li>
-                                          <li>Recall: 80%+ (catch real knocks)</li>
-                                          <li>F1 Score: 85%+</li>
-                                          <li>AUC: 0.90+</li>
-                                        </ul>
-                                        <h3>Data Privacy & Security</h3>
-                                        <p><strong>Audio Data Handling:</strong></p>
-                                        <ul>
-                                          <li>Audio files are encrypted in transit (HTTPS/TLS)</li>
-                                          <li>Stored encrypted at rest (AES-256)</li>
-                                          <li>User can delete their audio anytime</li>
-                                          <li>Opt-in sharing for ML training (not mandatory)</li>
-                                          <li>No personal identifiers stored with audio</li>
-                                        </ul>
-                                        <p><strong>User Data:</strong></p>
-                                        <ul>
-                                          <li>GDPR compliant (right to deletion, data portability)</li>
-                                          <li>Clear privacy policy (what data we collect, how we use it)</li>
-                                          <li>No third-party data sharing without consent</li>
-                                          <li>Regular security audits</li>
-                                        </ul>
-                                        <hr>
-                                  <li>Month 2-3: ML model training (using public datasets)</li>
-                                  <li>Month 3-4: Integration, testing</li>
-                                  <li>Month 4-5: Beta testing with 100 users</li>
-                                  <li>Month 5-6: Launch on App Store/Play Store</li>
-                                </ul>
-                                <h3>Phase 2: Expansion (Months 7-12)</h3>
-                                <p><strong>Goal:</strong> Scale to 10,000 users, expand car model database</p>
-                                <p><strong>Deliverables:</strong></p>
-                                <ul>
-                                  <li>500+ car model</li>
-                                </ul>
-                                <hr>
-                        <h2>Technical Architecture</h2>
-                        <h3>Mobile App (iOS/Android)</h3>
-                        <ul>
-                          <li><strong>Framework:</strong> React Native or Flutter</li>
-                          <li><strong>Audio capture:</strong> Native microphone API</li>
-                          <li><strong>Local preprocessing:</strong> Noise reduction, compression</li>
-                          <li><strong>Cloud sync:</strong> Firebase or custom backend</li>
-                        </ul>
-                        <h3>Backend Infrastructure</h3>
-                        <ul>
-                          <li><strong>API Server:</strong> Node.js/Python (FastAPI)</li>
-                          <li><strong>Audio Processing:</strong> Python (librosa, scipy)</li>
-                          <li><strong>ML Model:</strong> TensorFlow/PyTorch for knock detection</li>
-                          <li><strong>Database:</strong> PostgreSQL (metadata), S3 (audio files)</li>
-                          <li><strong>Deployment:</strong> AWS or Google Cloud</li>
-                        </ul>
-                        <h3>ML Pipeline</h3>
-                        <ul>
-                          <li><strong>Audio preprocessing:</strong> Spectral analysis, MFCC extraction</li>
-                          <li><strong>Knock detection classifier:</strong> CNN or XGBoost</li>
-                          <li><strong>Training data:</strong> 1000+ labeled samples per car model</li>
-                          <li><strong>Accuracy target:</strong> 85%+ vs. professional mechanic assessment</li>
-                        </ul>
-                        <h3>Security & Privacy</h3>
-                        <ul>
-                          <li><strong>HTTPS/TLS</strong> for all data in transit</li>
-                          <li><strong>Encryption at rest</strong> for audio files</li>
-                          <li><strong>GDPR compliance:</strong> Data deletion, consent management</li>
-                          <li><strong>Anonymization:</strong> No personal identifiers in audio</li>
-                        </ul>
-                        <hr>
-                <h2>Business Model</h2>
-                <h3>B2C (Consumer) - Primary Revenue</h3>
-                <ul>
-                  <li><strong>Freemium model:</strong>
-                    <ul>
-                      <li>Free: 3 inspections/month, basic features</li>
-                      <li>Premium: Unlimited inspections, advanced reports, priority support</li>
-                      <li>Pricing: <strong>99 SEK/month</strong> or <strong>799 SEK/year</strong></li>
-                    </ul>
-                  </li>
-                  <li><strong>Target:</strong> 100,000 users in Year 1, 500,000 by Year 3</li>
-                  <li><strong>Conversion:</strong> 5-10% to premium</li>
-                  <li><strong>Revenue Year 1:</strong> ~5-10 million SEK</li>
-                </ul>
-                <h3>B2B (Dealership) - Secondary Revenue</h3>
-                <ul>
-                  <li><strong>Dealership licenses:</strong> 5,000-10,000 SEK/month per dealership</li>
-                  <li><strong>Features:</strong> Branded reports, bulk inspections, API access</li>
-                  <li><strong>Value prop:</strong> Certify used cars, build buyer trust, reduce returns</li>
-                  <li><strong>Target:</strong> 100 dealerships by Year 2</li>
-                  <li><strong>Revenue Year 2:</strong> ~10-15 million SEK</li>
-                </ul>
-                <h3>Data Monetization (Future)</h3>
-                <ul>
-                  <li><strong>Anonymized audio library</strong> licensing to automotive manufacturers</li>
-                  <li><strong>Predictive maintenance insights</strong> for insurance companies</li>
-                  <li><strong>Market data</strong> (car condition trends by model/region)</li>
-                </ul>
-                <hr>
-        <h2>The Problem: Why Private Car Buying is Broken</h2>
-        <h3>The Knowledge Gap</h3>
-        <ul>
-          <li><strong>85% of private car buyers</strong> have no mechanical knowledge (source: Swedish Consumer Agency)</li>
-          <li>Professional pre-purchase inspections cost <strong>2,000-5,000 SEK</strong> and require scheduling</li>
-          <li>Many buyers skip inspection entirely, hoping for the best</li>
-        </ul>
-        <h3>The Trust Gap</h3>
-        <ul>
-          <li>Sellers may not disclose known issues (intentionally or unintentionally)</li>
-          <li>Buyers have no way to verify claims like "engine runs great"</li>
-          <li>Hidden costs (timing belt replacement, gearbox fluid leaks) can cost <strong>10,000-50,000 SEK</strong> after purchase</li>
-        </ul>
-        <h3>The Time Gap</h3>
-        <ul>
-          <li>Finding a car, scheduling viewings, and getting inspections takes weeks</li>
-          <li>Buyers need to make quick decisions or lose the car to another buyer</li>
-          <li>No time for professional assessment</li>
-        </ul>
-        <h3>The Market Opportunity</h3>
-        <ul>
-          <li><strong>Sweden:</strong> ~500,000 private car sales annually</li>
-          <li><strong>Europe:</strong> ~15 million private car sales annually</li>
-          <li>Average car price: <strong>150,000 SEK</strong> (Sweden)</li>
-          <li>Market size: <strong>75 billion SEK</strong> (Sweden alone)</li>
-        </ul>
-        <hr>
-        <h2>The Solution: CarInspect</h2>
-        <h3>Core Concept</h3>
-        <p>CarInspect is a mobile app that combines three powerful tools:</p>
-        <ol>
-          <li><strong>Real-Time Audio Analysis</strong> – Detect engine knock and other mechanical issues instantly</li>
-          <li><strong>Model-Specific Checklists</strong> – Know exactly what to look for on your specific car</li>
-          <li><strong>Crowdsourced Training Data</strong> – Continuously improve accuracy with user contributions</li>
-        </ol>
-        <h3>How It Works: Carl's Story</h3>
-        <p><strong>Carl is a 35-year-old software engineer.</strong> He found a 2010 Volvo V40 on Blocket.se that fits his budget. But he's nervous about hidden mechanical issues. He downloads CarInspect.</p>
-        <p><strong>Step 1: Car Selection</strong><br>
-        Carl opens the app and enters: 2010 → Volvo → V40. The app instantly displays a checklist of common issues for this model:</p>
-        <ul>
-          <li>Check timing belt (critical for this year)</li>
-          <li>Inspect gearbox fluid (known issue)</li>
-          <li>Listen for valve noise</li>
-          <li>Check for rust spots</li>
-        </ul>
-        <p><strong>Step 2: Sound Analysis</strong><br>
-        At the seller's location, Carl positions his phone near the engine bay and records a 45-second audio clip. The app captures real-time waveform data and uploads it to our server.</p>
-        <p><strong>Within 10 seconds, the server analyzes the audio and returns:</strong></p>
-        <ul>
-          <li>✅ <strong>Engine Status:</strong> 🔴 WARNING</li>
-          <li>✅ <strong>Finding:</strong> Engine knock detected (78% confidence)</li>
-          <li>✅ <strong>Recommendation:</strong> "This engine shows signs of pre-detonation. We recommend professional inspection before purchase."</li>
-        </ul>
-        <p><strong>Step 3: Inspection Checklist</strong><br>
-        Carl completes the checklist:</p>
-        <ul>
-          <li>✅ Timing belt looks worn</li>
-          <li>✅ Gearbox fluid is dark (might need change)</li>
-          <li>✅ No obvious rust spots</li>
-          <li>✅ Engine knock detected by app</li>
-        </ul>
-        <p><strong>Step 4: Report Generation</strong><br>
-        Carl exports a PDF report with all findings. He shares it with his mechanic friend, who confirms: "Yeah, that knock is real. Budget 15,000 SEK for timing belt replacement."</p>
-        <p><strong>Result:</strong> Carl negotiates the price down by 15,000 SEK. He buys the car with realistic expectations and avoids overpaying.</p>
-        <hr>
-        <h2>Key Features</h2>
-        <h3>1. Sound Analyzer (Engine Bay)</h3>
-        <ul>
-          <li><strong>Real-time audio capture</strong> with waveform visualization</li>
-          <li><strong>Server-side ML analysis</strong> for knock detection and anomalies</li>
-          <li><strong>Confidence scoring</strong> (e.g., "78% confident engine knock detected")</li>
-          <li><strong>Plain-language results</strong> (no technical jargon)</li>
-          <li><strong>Metadata capture:</strong> Phone model, GPS, timestamp, engine RPM (future)</li>
-        </ul>
-        <h3>2. Car Model Database</h3>
-        <ul>
-          <li><strong>20,000+ car models</strong> with known issues and common problems</li>
-          <li><strong>Year-specific guidance</strong> (e.g., "2010 V40 has timing belt issues")</li>
-          <li><strong>Visual checklists</strong> with photos and diagrams</li>
-          <li><strong>Severity indicators</strong> (Critical / Important / Minor)</li>
-          <li><strong>Offline access</strong> (checklists work without internet)</li>
-        </ul>
-        <h3>3. Inspection Profile</h3>
-        <ul>
-          <li><strong>Consolidated report</strong> with all findings</li>
-          <li><strong>Photo attachments</strong> from checklist items</li>
-          <li><strong>User notes</strong> and observations</li>
-          <li><strong>Condition rating</strong> (1-5 stars, auto-calculated)</li>
-          <li><strong>Export options:</strong> PDF, email, cloud sync</li>
-        </ul>
-        <h3>4. Sound Library & Database</h3>
-        <ul>
-          <li><strong>Crowdsourced audio samples</strong> tagged by car model and condition</li>
           <li><strong>Side-by-side comparison:</strong> Healthy vs. problematic engines</li>
           <li><strong>Community ratings</strong> ("Is this knock?" voting)</li>
           <li><strong>ML training data</strong> for continuous improvement</li>
