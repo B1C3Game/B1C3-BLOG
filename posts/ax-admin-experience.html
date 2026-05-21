@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AX: The Discipline We Forgot to Name | B1C3 Blog</title>
+  <meta name="description" content="AX names the hidden cost of security, compliance, and admin workflows on the people who operate systems every day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="https://b1c3.dev/" aria-label="B1C3 Home">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Blog</a>
+      <a href="https://b1c3.dev/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="article-hero reveal">
+      <p class="eyebrow">Admin Experience, Security, Compliance</p>
+      <h1>AX: The Discipline We Forgot to Name</h1>
+      <p class="lead">The work of keeping systems safe is often paid for by the people operating them.</p>
+      <p class="post-date">Published: 2026-05-21</p>
+    </section>
+
+    <article class="panel post reveal">
+      <div class="post-content">
+        <h2>The moment it clicked</h2>
+        <p>A hospital records system where the nurse on night shift needs three logins and a phone call to update one patient note.</p>
+        <p>A school admin portal where transferring a student between classes touches four different screens, none of which talk to each other.</p>
+        <p>A SaaS billing dashboard where revoking access to an ex-employee requires opening a support ticket with the vendor.</p>
+        <p>An IT department that moved from a single admin account that could fix anything to split accounts with timed elevation gated by an uncopyable long password. Safer. Auditable. Correct. Also exhausting.</p>
+        <p>Every one of these is a security or compliance win on paper. Every one extracts a quiet tax from the person on the other side of the screen.</p>
+        <p>We have a name for the user side of this problem (UX). We have a name for the developer side (DX). We do not have a name for the people who keep the lights on.</p>
+        <p>So here is one: <strong>AX. Admin Experience.</strong></p>
+
+        <h2>What AX actually is</h2>
+        <p>AX is the lived experience of the people who configure, operate, audit, and clean up the systems everyone else uses.</p>
+        <p>System administrators. Compliance officers. Accessibility auditors. Support engineers. Internal tools owners. The "owner" of the SaaS dashboard nobody else logs into.</p>
+        <p>They are not end users. They are not developers. They are the third audience, and most products treat them as an afterthought.</p>
+        <p>You can spot bad AX without looking at a screen:</p>
+        <ul>
+          <li>Tickets that take three tools to resolve.</li>
+          <li>Admins who keep a personal text file of "the real instructions."</li>
+          <li>Tribal knowledge that walks out the door when someone quits.</li>
+          <li>Burnout that looks like apathy but is actually friction fatigue.</li>
+        </ul>
+        <p>You can spot good AX the same way:</p>
+        <ul>
+          <li>Admins who feel competent.</li>
+          <li>Routine work that feels boring in the good way.</li>
+          <li>New hires who reach baseline in days, not quarters.</li>
+          <li>A tool the admin would actually recommend to a peer.</li>
+        </ul>
+        <blockquote>
+          <p>Administration should be fun if done right. That is pride.</p>
+        </blockquote>
+
+        <h2>Why nobody optimizes for it</h2>
+        <p>Three structural reasons:</p>
+        <ol>
+          <li>Admins do not churn loudly. End users leave. Developers tweet. Admins suffer in silence because suffering is part of the job description they accepted.</li>
+          <li>Admins are a small audience per customer. One or two per org. Easy to deprioritize on a roadmap meeting.</li>
+          <li>Admin work is invisible when it works. Nobody writes a case study about the day nothing broke.</li>
+        </ol>
+        <p>So AX gets squeezed between "the customer wants new features" and "security says no." The admin is the shock absorber. Quietly.</p>
+
+        <h2>The accessibility connection</h2>
+        <p>This is where it gets interesting.</p>
+        <p>Accessibility compliance is an AX problem disguised as a UX problem.</p>
+        <p>The end user benefit is obvious: a screen reader user can navigate the site. Good. That is UX.</p>
+        <p>But the work of getting there is done by admins. Someone runs the scan. Someone triages 4000 issues. Someone assigns them to content owners across 12 departments. Someone re-runs the scan next month and proves progress to a board.</p>
+        <p>If that workflow is painful, accessibility does not happen. Not because the org does not care. Because the friction is higher than the political will.</p>
+        <p>Every accessibility platform is, in practice, an AX product. The UX is downstream of whether the admin can do their job without wanting to quit.</p>
+
+        <h2>A working definition</h2>
+        <p>AX is good when the admin can:</p>
+        <ol>
+          <li><strong>See the system honestly.</strong> No hidden state, no "ask the vendor" black boxes.</li>
+          <li><strong>Act with confidence.</strong> Reversible by default. Dangerous actions clearly marked.</li>
+          <li><strong>Explain what they did.</strong> Audit trails that read like prose, not log dumps.</li>
+          <li><strong>Hand it off.</strong> Documentation generated as a side effect of normal use, not a separate project.</li>
+          <li><strong>Feel competent.</strong> Not heroic. Competent. The boring kind of good.</li>
+        </ol>
+        <p>If any of those are missing, you do not have an admin tool. You have an admin tax.</p>
+
+        <h2>Where this goes</h2>
+        <p>I am writing this down because the discipline does not have a vocabulary yet, and you cannot improve what you cannot name.</p>
+        <p>I think the next generation of internal tooling, of compliance platforms, of "we sell to the IT department" SaaS, will be won by whoever takes AX seriously as a first-class design surface.</p>
+        <p>Not as a feature. As a stance.</p>
+        <p>If that is a conversation you are already having internally, I would like to compare notes.</p>
+      </div>
+
+      <div class="post-nav">
+        <a href="../index.html" class="back-link">← Back to blog</a>
+      </div>
+    </article>
+  </main>
+
+  <footer id="contact" class="site-footer reveal">
+    <div class="motif" aria-hidden="true">
+      <svg viewBox="0 0 340 140" role="img" aria-label="Constraint network motif">
+        <defs>
+          <linearGradient id="motifSpokeAx" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#334a5f"></stop>
+            <stop offset="100%" stop-color="#8fa4b7"></stop>
+          </linearGradient>
+          <radialGradient id="motifCenterAx" cx="34%" cy="28%" r="72%">
+            <stop offset="0%" stop-color="#4b4b4b"></stop>
+            <stop offset="100%" stop-color="#111111"></stop>
+          </radialGradient>
+          <radialGradient id="motifNodeLightAx" cx="35%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#f5efe4"></stop>
+            <stop offset="100%" stop-color="#c7d3dd"></stop>
+          </radialGradient>
+        </defs>
+        <g class="motif-spokes">
+          <polygon class="spoke" points="170,72 162,74 54,90 58,84" fill="url(#motifSpokeAx)"></polygon>
+          <polygon class="spoke" points="170,72 172,64 116,42 110,46" fill="url(#motifSpokeAx)"></polygon>
+          <polygon class="spoke" points="170,72 178,74 232,96 226,100" fill="url(#motifSpokeAx)"></polygon>
+          <polygon class="spoke" points="170,72 176,66 292,56 290,62" fill="url(#motifSpokeAx)"></polygon>
+        </g>
+        <g class="motif-nodes">
+          <circle class="node node-light" cx="56" cy="87" r="8" fill="url(#motifNodeLightAx)"></circle>
+          <circle class="node node-light" cx="113" cy="44" r="7" fill="url(#motifNodeLightAx)"></circle>
+          <circle class="node node-emphasis" cx="170" cy="72" r="14" fill="url(#motifCenterAx)"></circle>
+          <circle class="node node-light" cx="229" cy="98" r="7" fill="url(#motifNodeLightAx)"></circle>
+          <circle class="node node-light" cx="291" cy="59" r="8" fill="url(#motifNodeLightAx)"></circle>
+        </g>
+      </svg>
+    </div>
+    <p>Contact: <a href="mailto:contact@b1c3.dev"><span aria-hidden="true">✉</span> contact@b1c3.dev</a> · <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub Repo</a> · <a href="https://b1c3game.github.io/multi-agent-collab-test/" target="_blank" rel="noreferrer">B1C3 Home</a></p>
+    <p class="micro">B1C3, systems that amplify 🧠</p>
+  </footer>
+</body>
+</html>
