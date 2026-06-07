@@ -1,0 +1,59 @@
+# B1C3 Blog — robots.txt
+# Contact: contact@b1c3.dev
+# Full policy: https://b1c3game.github.io/B1C3-BLOG/robots.txt
+
+# All crawlers: reading is welcome, training is not
+User-agent: *
+Allow: /
+Disallow: /posts/drafts/
+
+# AI training crawlers — reading allowed, training data collection not permitted
+# We track AI visits separately. Contact us if you want to discuss access.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookExternalUA
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# Sitemap
+Sitemap: https://b1c3game.github.io/B1C3-BLOG/sitemap.xml
