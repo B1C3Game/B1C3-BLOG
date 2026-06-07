@@ -1,0 +1,11 @@
+name = "b1c3-blog-analytics"
+main = "src/index.js"
+compatibility_date = "2026-06-07"
+
+[[d1_databases]]
+binding = "ANALYTICS_DB"
+database_name = "b1c3-blog-analytics"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[vars]
+ANALYTICS_SALT = "replace-me-before-deploy"
