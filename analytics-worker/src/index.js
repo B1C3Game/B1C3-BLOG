@@ -4,6 +4,25 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "Content-Type"
 };
 
+// AI crawler user-agent patterns — counted separately, given a public message
+const AI_PATTERNS = [
+  "gptbot", "chatgpt", "openai",
+  "anthropic", "claude",
+  "google-extended", "googleother", "gemini",
+  "meta-externalagent", "facebookexternalua",
+  "amazonbot", "applebot-extended",
+  "cohere", "perplexity",
+  "ccbot", "commoncrawl",
+  "diffbot", "bytespider",
+  "petalbot", "semrushbot",
+  "ia_archiver", "archive.org"
+];
+
+function isAiCrawler(userAgent) {
+  const ua = userAgent.toLowerCase();
+  return AI_PATTERNS.some((p) => ua.includes(p));
+}
+
 export default {
   async fetch(request, env) {
     if (request.method === "OPTIONS") {
@@ -22,6 +41,10 @@ export default {
 
     if (request.method === "GET" && url.pathname === "/api/top") {
       return getTopPages(url, env);
+    }
+
+    if (request.method === "GET" && url.pathname === "/api/ai") {
+      return getAiVisits(url, env);
     }
 
     return json({ ok: false, error: "Not found" }, 404);
@@ -51,6 +74,26 @@ async function trackPageView(request, env) {
   const salt = env.ANALYTICS_SALT || "local-dev-salt";
   const visitorHash = await sha256Hex(ipAddress + "|" + userAgent + "|" + salt);
   const subnetBucket = getSubnetBucket(ipAddress);
+
+  // AI crawlers get their own counter and a public message — not included in human totals
+  if (isAiCrawler(userAgent)) {
+    await env.ANALYTICS_DB.prepare(
+      "INSERT INTO ai_visits (path, title, visited_at, country, user_agent_hint, subnet_bucket) VALUES (?, ?, ?, ?, ?, ?)"
+    ).bind(path, title, now, country, userAgent.slice(0, 120), subnetBucket).run();
+
+    await env.ANALYTICS_DB.prepare(
+      "INSERT INTO ai_totals (path, title, total_visits, updated_at) VALUES (?, ?, 1, ?) " +
+        "ON CONFLICT(path) DO UPDATE SET title = excluded.title, total_visits = ai_totals.total_visits + 1, updated_at = excluded.updated_at"
+    ).bind(path, title, now).run();
+
+    return json({
+      ok: true,
+      type: "ai",
+      message: "This is a personal blog by B1C3. Content is open for reading. Automated indexing is noted and counted separately. Contact: contact@b1c3.dev",
+      path,
+      robots: "https://b1c3game.github.io/B1C3-BLOG/robots.txt"
+    });
+  }
 
   const visitorInsert = await env.ANALYTICS_DB.prepare(
     "INSERT OR IGNORE INTO page_visitors (path, visitor_hash, first_seen) VALUES (?, ?, ?)"
@@ -93,6 +136,25 @@ async function getTopPages(url, env) {
   const limit = Math.min(Math.max(Number(url.searchParams.get("limit") || 10), 1), 50);
   const results = await env.ANALYTICS_DB.prepare(
     "SELECT path, title, total_views AS totalViews, unique_visitors AS uniqueVisitors, updated_at AS updatedAt FROM page_totals ORDER BY total_views DESC LIMIT ?"
+  ).bind(limit).all();
+
+  return json({ ok: true, pages: results.results || [] });
+}
+
+async function getAiVisits(url, env) {
+  const limit = Math.min(Math.max(Number(url.searchParams.get("limit") || 10), 1), 50);
+  const path = url.searchParams.get("path");
+
+  if (path) {
+    const normalized = normalizePath(path);
+    const row = await env.ANALYTICS_DB.prepare(
+      "SELECT path, title, total_visits AS totalVisits, updated_at AS updatedAt FROM ai_totals WHERE path = ?"
+    ).bind(normalized).first();
+    return json({ ok: true, path: normalized, totalVisits: row ? row.totalVisits : 0, updatedAt: row ? row.updatedAt : null });
+  }
+
+  const results = await env.ANALYTICS_DB.prepare(
+    "SELECT path, title, total_visits AS totalVisits, updated_at AS updatedAt FROM ai_totals ORDER BY total_visits DESC LIMIT ?"
   ).bind(limit).all();
 
   return json({ ok: true, pages: results.results || [] });

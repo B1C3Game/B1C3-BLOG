@@ -28,3 +28,24 @@ CREATE TABLE IF NOT EXISTS page_totals (
   unique_visitors INTEGER NOT NULL DEFAULT 0,
   updated_at INTEGER NOT NULL
 );
+
+-- AI crawler traffic: counted separately, not mixed into human totals
+CREATE TABLE IF NOT EXISTS ai_visits (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  path TEXT NOT NULL,
+  title TEXT NOT NULL,
+  visited_at INTEGER NOT NULL,
+  country TEXT NOT NULL,
+  user_agent_hint TEXT NOT NULL,
+  subnet_bucket TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_ai_visits_path_time ON ai_visits(path, visited_at DESC);
+CREATE INDEX IF NOT EXISTS idx_ai_visits_country ON ai_visits(country);
+
+CREATE TABLE IF NOT EXISTS ai_totals (
+  path TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  total_visits INTEGER NOT NULL DEFAULT 0,
+  updated_at INTEGER NOT NULL
+);
