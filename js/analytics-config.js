@@ -1,4 +1,4 @@
 window.B1C3AnalyticsConfig = {
-  enabled: false,
-  endpoint: "https://your-worker-subdomain.workers.dev"
+  enabled: true,
+  endpoint: "https://b1c3-blog-analytics.b1c3game.workers.dev"
 };

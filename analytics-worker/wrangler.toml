@@ -5,7 +5,6 @@ compatibility_date = "2026-06-07"
 [[d1_databases]]
 binding = "ANALYTICS_DB"
 database_name = "b1c3-blog-analytics"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "ffb19ac5-42fd-4e35-9bdb-d0c5e455da8b"
 
-[vars]
-ANALYTICS_SALT = "replace-me-before-deploy"
+# ANALYTICS_SALT is stored as a Cloudflare Worker secret (set via wrangler secret put)
