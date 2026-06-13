@@ -37,10 +37,16 @@ Convert your reviewed draft into HTML using the standard blog post template.
 2. Populate `<head>` metadata:
    - `<title>`: "Your Post Title | B1C3 Blog"
    - `<meta name="description">`: Short description (40–160 characters)
+   - `<link rel="stylesheet" href="../css/style.css">` and `../css/responsive.css`
    - Date in `<link rel="icon">`: Ensure it points to `../static/favicon.svg`
-  - `<link rel="canonical">`: Full published URL for the post
-  - Open Graph tags: `og:title`, `og:description`, `og:url`, `og:type`, and `og:image` when relevant
-  - Twitter card tags: optional, only if you want extra polish on X/Twitter
+   - **Analytics scripts** (critical for tracking):
+     ```html
+     <script src="../js/analytics-config.js"></script>
+     <script defer src="../js/analytics.js"></script>
+     ```
+   - `<link rel="canonical">`: Full published URL for the post
+   - Open Graph tags: `og:title`, `og:description`, `og:url`, `og:type`, and `og:image` when relevant
+   - Twitter card tags: optional, only if you want extra polish on X/Twitter
 3. Update the hero section (`.article-hero`):
    - Category (eyebrow)
    - Post title (`<h1>`)

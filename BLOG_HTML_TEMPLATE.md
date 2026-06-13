@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="../css/responsive.css">
   <link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
   <meta name="twitter:card" content="summary_large_image">
+  <script src="../js/analytics-config.js"></script>
+  <script defer src="../js/analytics.js"></script>
   <meta name="twitter:title" content="Blog Post Title | B1C3 Blog">
   <meta name="twitter:description" content="Short description of the post.">
   <meta name="twitter:image" content="https://b1c3game.github.io/B1C3-BLOG/static/images/your-preview-image.jpg">
@@ -62,6 +64,7 @@
 - [ ] Canonical URL points to the live published post URL.
 - [ ] Open Graph metadata is present for link previews.
 - [ ] Twitter card metadata is included only if you want X/Twitter polish.
+- [ ] Analytics scripts are included: `<script src="../js/analytics-config.js"></script>` and `<script defer src="../js/analytics.js"></script>`
 - [ ] Validate HTML with a linter or validator if possible.
 - [ ] Test in browser: all content should be inside the styled container, nothing should overflow or appear outside the main post area.
 
@@ -70,6 +73,7 @@
 - Closing the `.post-content` `<div>` too early, leaving content outside the main container.
 - Leaving orphaned content after the closing `</main>` tag.
 - Not updating the `<title>`, `<meta name="description">`, or `<p class="post-date">` for each post.
+- **Forgetting the analytics scripts** in `<head>`. Without them, page views won't be tracked. Always include both `analytics-config.js` and `analytics.js`.
 
 ---
 
