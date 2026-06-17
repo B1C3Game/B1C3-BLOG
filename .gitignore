@@ -37,3 +37,7 @@ posts/drafts/
 
 # Separate repo managed independently
 mycelium-ML/
+
+# Depublished content (do not re-add)
+posts/unexplainable-knowledge.html
+static/images/unexplainable-knowledge-coherence.png
