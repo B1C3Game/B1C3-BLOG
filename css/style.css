@@ -262,6 +262,35 @@ h1 {
   line-height: 1.7;
 }
 
+/* Image responsive and accessible styles */
+.post-image {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.post-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  background: var(--surface);
+}
+
+.post-image figcaption {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .post-image {
+    margin: 1.5rem 0;
+  }
+}
+
 .post-nav {
   padding-top: 1.2rem;
   border-top: 1px solid var(--line);
