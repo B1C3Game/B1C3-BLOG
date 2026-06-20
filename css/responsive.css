@@ -36,6 +36,24 @@
   nav {
     gap: 0.7rem 1rem;
   }
+
+  .consent-popup {
+    left: 0.8rem;
+    right: 0.8rem;
+    bottom: 0.8rem;
+  }
+
+  .consent-popup-inner {
+    padding: 0.9rem;
+  }
+
+  .consent-actions {
+    flex-direction: column;
+  }
+
+  .consent-actions .button {
+    text-align: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

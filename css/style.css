@@ -366,3 +366,80 @@ a:focus-visible,
     transform: translateY(0);
   }
 }
+
+.consent-popup {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+}
+
+.consent-popup-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  background: rgba(251, 250, 246, 0.98);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 12px 28px rgba(18, 26, 32, 0.15);
+}
+
+.consent-text {
+  margin: 0.6rem 0 0.9rem;
+  color: var(--ink-soft);
+}
+
+.consent-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  color: var(--ink);
+}
+
+.consent-check input {
+  margin-top: 0.22rem;
+}
+
+.consent-meta {
+  margin: 0.8rem 0 0.9rem;
+}
+
+.consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.nsfw-content[hidden] {
+  display: none;
+}
+
+.nsfw-preview {
+  margin: 0.6rem 0 0.9rem;
+}
+
+.nsfw-preview img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(243, 241, 234, 0.85);
+}
+
+.nsfw-content .card {
+  margin-bottom: 0.9rem;
+}
+
+.post-gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.post-gallery .post-image {
+  margin: 0;
+}

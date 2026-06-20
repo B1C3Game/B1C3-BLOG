@@ -1,0 +1,55 @@
+﻿# ChatGPT Prompt - 9800e98f F751 4751 B827 De3d1265822d
+
+## Intent
+
+One sentence: what this meme should make obvious at first glance.
+
+## Primary Prompt
+
+Use this prompt in ChatGPT web image generation:
+
+```
+Create a meme image that is explicit in meaning at first glance.
+Style: high-clarity visual narrative, bold composition, legible emotion, internet-native format.
+Tone: edgy but understandable, not cryptic.
+Core concept: 9800e98f F751 4751 B827 De3d1265822d.
+Context to encode: [replace with concrete scenario].
+Visual metaphor: [replace with concrete metaphor].
+Include: strong focal subject, supporting secondary detail, clean background hierarchy.
+Exclude: unreadable clutter, muddy color palette, over-complex symbolism.
+Output: one high-resolution image, suitable for web post embedding.
+```
+
+## Negative Constraints
+
+- No accidental logos or copyrighted characters.
+- No unreadable tiny text.
+- No style drift from concept intent.
+
+## Variant Prompts
+
+### Variant A: Cleaner
+
+```
+[Paste adjusted prompt here]
+```
+
+### Variant B: More aggressive
+
+```
+[Paste adjusted prompt here]
+```
+
+### Variant C: Minimal
+
+```
+[Paste adjusted prompt here]
+```
+
+## Run Log
+
+- Date:
+- Model:
+- Best result:
+- Why chosen:
+

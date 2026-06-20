@@ -1,0 +1,10 @@
+{
+  "slug": "{{SLUG}}",
+  "title": "{{TITLE}}",
+  "created": "{{DATE}}",
+  "status": "draft",
+  "tags": ["nsfw", "meme"],
+  "source_asset": "assets/original",
+  "selected_export": "",
+  "notes": ""
+}
