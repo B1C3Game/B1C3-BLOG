@@ -76,5 +76,6 @@ This index maps each RF-warning image to arc step and documentation files.
 ## Review Queue
 
 - Replace placeholder prompt summaries in each PROMPT_SOURCE.md with exact generation prompts when available.
+- Set prompt source link in each PROMPT_SOURCE.md and metadata.json to exact URL when known, otherwise keep as TBA.
 - Fill metadata arc_step in each metadata.json from this map.
 - Mark status as published where appropriate after final review.

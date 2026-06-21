@@ -5,5 +5,6 @@
     "post_path":  "posts/rf-warning-from-self-help-to-threat.html",
     "static_image_path":  "static/images/rf-warning-01-steelman-baseline.png",
     "arc_step":  "1",
-    "notes":  "Auto-seeded documentation entry; refine with exact prompt provenance."
+    "notes":  "Auto-seeded documentation entry; refine with exact prompt provenance.",
+    "prompt_source_link":  "TBA"
 }

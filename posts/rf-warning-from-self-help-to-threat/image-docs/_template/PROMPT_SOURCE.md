@@ -8,6 +8,8 @@ Describe why this image exists in the RF-warning arc.
 
 Paste the operative generation prompt or reconstruction summary.
 
+Source link: TBA
+
 ## Constraints
 
 - No copyrighted characters or logos.

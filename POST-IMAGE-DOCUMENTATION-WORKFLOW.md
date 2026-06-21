@@ -36,6 +36,7 @@ For each post package folder, create:
 - generation intent
 - key constraints
 - variant notes
+- source link (or TBA if not available yet)
 
 2. Image Card
 - one-line definition
@@ -50,6 +51,7 @@ For each post package folder, create:
 - post_path
 - static_image_path
 - arc_step
+- prompt_source_link
 - notes
 
 ## Publish Qualification

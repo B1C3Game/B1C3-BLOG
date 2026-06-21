@@ -28,6 +28,8 @@ RF-warning arc image for step mapping and doctrine stress-test presentation.
 
 Original prompt chain for this image should be recorded here when available.
 
+Source link: TBA
+
 ## Constraints
 
 - No copyrighted characters or logos.
@@ -68,6 +70,7 @@ Risk: read as style-only satire. Correction: this is part of a consequence-focus
   "post_path": "posts/rf-warning-from-self-help-to-threat.html",
   "static_image_path": "static/images/$($img.Name)",
   "arc_step": "",
+  "prompt_source_link": "TBA",
   "notes": "Auto-seeded documentation entry; refine with exact prompt provenance."
 }
 "@

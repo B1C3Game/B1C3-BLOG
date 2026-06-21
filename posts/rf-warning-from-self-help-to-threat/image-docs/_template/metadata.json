@@ -5,5 +5,6 @@
   "post_path": "posts/rf-warning-from-self-help-to-threat.html",
   "static_image_path": "static/images/{{FILENAME}}",
   "arc_step": "",
+  "prompt_source_link": "TBA",
   "notes": ""
 }
