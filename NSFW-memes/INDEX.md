@@ -44,3 +44,4 @@ Generated: 2026-06-20 23:56:05
 - poc-06-literacy-framing-risk-87fedc8a-5f0b-41d4-91a3-d3ee5869b2ca
 - poc-06-literacy-framing-risk-a0e6e77b-cbb7-4679-a8ca-0c506e4b103d
 - poc-06-literacy-framing-risk-c6f6f96c-e06d-4920-85d4-642e80ac977f
+- poc-07-meme-is-relation-not-image-cdde1152-6d55-45fc-8d9e-c750476c24ad

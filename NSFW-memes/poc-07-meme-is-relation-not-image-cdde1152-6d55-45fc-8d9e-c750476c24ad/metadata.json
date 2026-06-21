@@ -1,0 +1,10 @@
+{
+  "slug": "poc-07-meme-is-relation-not-image-cdde1152-6d55-45fc-8d9e-c750476c24ad",
+  "title": "Meme Is Relation, Not Image",
+  "created": "2026-06-21",
+  "status": "published",
+  "tags": ["nsfw", "meme", "culture", "semantics", "anti-gatekeeping", "poc-07"],
+  "source_asset": "assets/original.png",
+  "selected_export": "exports/cdde1152-6d55-45fc-8d9e-c750476c24ad.png",
+  "notes": "Winner selected after iterative prompt hardening; full failed-to-fixed sequence retained in exports and issue log."
+}
