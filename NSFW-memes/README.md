@@ -51,6 +51,12 @@ Import loose image files in this root into per-meme folders:
 .\_tools\import-loose-files.ps1
 ```
 
+Create a dedicated NSFW meme page from an existing meme slug:
+
+```powershell
+.\_tools\new-meme-page.ps1 -Slug "poc-06-literacy-framing-risk-87fedc8a-5f0b-41d4-91a3-d3ee5869b2ca" -PageSlug "literacy-framing-risk" -Title "Literacy Framing Risk"
+```
+
 Publish a selected meme image into blog static assets:
 
 ```powershell
@@ -64,9 +70,13 @@ Publish a selected meme image into blog static assets:
 3. Fill `PROMPT_CHATGPT.md` with exact production prompt and variants.
 4. Fill `MEME_CARD.md` with self-explanatory meaning and usage.
 5. Export final variants into `exports/`.
-6. Move selected final image to `static/images/` when publishing a blog post.
+6. Create or update a dedicated meme page in `../nsfw/memes/<page-slug>.html`.
+7. Add or update the card in `../nsfw/index.html` and point it to the meme page, not directly to the raw asset.
+8. Move selected final image to `static/images/` when publishing a blog post.
 
 Or use `publish-selected.ps1` to copy the selected asset automatically and mark the meme as published.
+
+See also: `../nsfw/NSFW-PUBLISHING-WORKFLOW.md`
 
 ## Notes
 

@@ -57,9 +57,58 @@ Minimal movie-poster composition with one brute silhouette, one barred window, o
 Headline only: "Legacy on trial."
 ```
 
+### Variant D: Restitution Ending (Land, Cave, Free Liver)
+
+```
+Create a dark-cinematic but hopeful sequel poster to "Time Traveling Liver-Eating Brute".
+Core concept: after institutional overreach, the brute receives restitution, his own land, a protected cave, and guaranteed free liver rations.
+Tone: serious satire with earned dignity, not parody slapstick.
+Scene composition:
+- foreground: the brute stands outside a newly granted cave entrance on rough natural land,
+- midground: a carved boundary marker stone reading "PRIVATE CAVE RIGHTS",
+- side detail: a wooden crate stamped "LIVER RATIONS - APPROVED",
+- background: distant institutional skyline fading into mist, implying the system is now at a distance.
+Main character direction: still physically imposing, but calmer and grounded, no rage posture.
+Main message text:
+- TIME TRAVELING LIVER-EATING BRUTE
+- "They gave him land."
+- "They gave him a cave."
+- "They stopped policing his appetite."
+Subline:
+- "Boundaries respected. Dignity restored."
+Visual language: mythic realism, high-contrast natural light, earthy palette with dawn tones.
+Humor style: deadpan, the absurdity is in bureaucratic restitution of primal needs.
+No real people, no real logos, no real government insignia, no copyrighted characters, no explicit gore.
+Output: one high-resolution vertical poster image suitable for web publishing.
+```
+
+### Variant D.1: Textless Art-First Render
+
+```
+Same as Variant D, but with no overlaid text at all.
+Focus on visual storytelling only: land grant marker, cave ownership, and approved liver rations.
+Keep the scene readable at thumbnail size.
+```
+
+### Variant D.2: Two-Panel Before/After
+
+```
+Create a two-panel cinematic poster:
+Left panel: the brute in jail with denied-liver symbolism.
+Right panel: the brute on granted land with cave rights and approved liver rations.
+Center divider text: "From control theater to boundary respect."
+Keep both panels in the same visual universe and color logic.
+```
+
 ## Run Log
 
 - Date: 2026-06-20
 - Model: ChatGPT image generation
 - Best result:
 - Why chosen:
+
+- Date: 2026-06-21
+- Model: ChatGPT image generation
+- Prompt used: Variant D
+- Output filename: 77eeea8c-3f8c-4631-baa7-3b0205f49084.png
+- Why chosen: Best narrative closure, clearly communicates restitution (land, cave rights, and approved liver) while preserving deadpan satire tone.
