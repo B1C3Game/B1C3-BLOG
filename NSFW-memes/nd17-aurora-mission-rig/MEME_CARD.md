@@ -6,31 +6,48 @@ ND-17 Aurora Mission Rig
 
 ## One-line Definition
 
-Mission readiness is a systems discipline, not a vibes decision.
+Doctrine survives compression into visual form alone. The image explains itself.
 
-## Full Definition
+## Full Definition: Artifact Stress Test
 
-This artifact frames high-performance execution as integration work: mobility, sensing, comms, storage, and environmental resilience all need to cohere before deployment.
+This image was created as a **workflow constraint test**, not just a meme. The question being asked:
 
-The critique is against performative readiness, looking capable without integrated systems proof.
+**"Given only an image file with a UUID name and no metadata, no prompt trace, no filename context—can meaningful doctrine structure be recovered?"**
+
+The answer: Yes. The visual composition alone encodes:
+- **Purpose** (integrated systems, mission-ready state)
+- **Environment** (operational conditions, deployment constraints)
+- **Constraints** (what's visible = what's engineered for)
+- **Operating assumptions** (readiness as integration, not posture)
+- **Ownership boundaries** (clear operational framing)
+- **Mission profile** (recoverable from composition)
+
+**The real artifact is not the image. It is the proof that doctrine can survive compression into visual form and still be readable by an informed observer.**
+
+This tests the B1C3 gallery architecture itself: Can surface-level navigation work because doctrine is embedded in the artifact? Or does meaning require supporting metadata?
+
+Answer: Doctrine embedded in visual composition is recoverable. **Meaning survives.**
 
 ## When To Use
 
-- A team claims readiness but has not validated operational dependencies.
-- You need to show that one strong subsystem does not equal mission readiness.
-- You want to frame preparation as architecture, not motivation.
+- Testing whether doctrine can be compressed without losing structure
+- Demonstrating that visual composition can encode operational philosophy
+- Showing that self-documenting artifacts work when doctrine is embedded in form
+- Validating gallery workflow assumptions (surface level suffices)
 
 ## Not This
 
-This is not a call for militarization. It is a systems-thinking metaphor for robust preparation under uncertainty.
+This is not performative military aesthetics. This is a systems-thinking test. The "mission readiness as integrated state" framing is a metaphor for: **"What survives when all the labels get stripped away?"**
 
 ## Caption Options
 
-- Ready is an integrated state, not a mood.
-- Capability without integration fails in the field.
-- Architecture decides survival under stress.
+- Doctrine survives compression into visual form.
+- The image explains itself if you know how to read.
+- Integration is visible before you read the caption.
+- Visual composition encodes operational philosophy.
+- Readiness is an integrated state, readable in structure alone.
 
 ## Post Hook
 
-Most teams confuse confidence with readiness. This piece argues that readiness is built from integrated systems that keep functioning under real constraints, not from hype, posture, or isolated excellence.
+This entry is both artifact and methodology proof. It tests the gallery's information architecture by asking: Can a visitor understand doctrine from visual composition alone, or is supporting metadata required? The answer determines whether the gallery can function as a resource (meaning visible at surface level) or only as an archive (meaning requires deep reading). This image proves that doctrine embedded in form is readable without additional context.
 

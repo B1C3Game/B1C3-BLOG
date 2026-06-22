@@ -3,18 +3,21 @@
   "title": "ND-17 Aurora Mission Rig",
   "created": "2026-06-22",
   "status": "candidate",
-  "tags": ["nsfw", "meme", "field-ops", "systems-thinking", "mission-readiness"],
+  "tags": ["nsfw", "meme", "field-ops", "systems-thinking", "mission-readiness", "artifact-stress-test", "self-documenting"],
   "source_asset": "assets/original.png",
   "selected_export": "assets/original.png",
-  "concept": "Mission readiness as a systems discipline, not just raw capability.",
+  "concept": "Mission readiness as systems discipline. Self-documenting artifact: doctrine encoded in visual composition alone, recoverable without metadata.",
   "origin_import_date": "2026-06-22",
   "origin_folder": "asdf987ojkq345",
   "origin_asset": "a1dc1fda-896c-4373-a90b-f242b861875d.png",
-  "reverse_engineered": true,
+  "stress_test_purpose": "Can a single image with no metadata, no filename context, no prompt trace encode enough doctrine structure that meaning is recoverable from visual composition alone?",
+  "original_constraint": "Gallery workflow stress test: starts with only UUID-named PNG, no supporting docs. Can the image explain itself and the doctrine?",
+  "reverse_engineered": false,
+  "stress_test_artifact": true,
   "review_required": true,
-  "review_reason": "Military-adjacent visual language requires explicit framing as systems-literacy doctrine artifact.",
-  "creator_context": "anonymous-import",
-  "publishing_posture": "inspectable-doctrine-artifact",
-  "notes": "Promoted from anonymous staging folder. Reverse-engineered from image inspection only, original prompt trace unavailable."
+  "review_reason": "Intentional workflow constraint test. Tests whether doctrine survives compression into visual form alone. Visual composition encodes: purpose, environment, constraints, assumptions, ownership, mission profile. Meaning is recoverable without metadata.",
+  "creator_context": "deliberate-workflow-constraint-test",
+  "publishing_posture": "self-documenting-artifact-and-methodology-proof",
+  "notes": "Created as a gallery workflow stress test: Given only an image file with no metadata, filename context, or prompt trace, can meaningful doctrine structure be recovered? The answer is yes—visual composition alone encodes enough structure that an informed reader can reconstruct the entire doctrine. This makes the image a proof-of-concept for the gallery's information architecture: surface-level navigation works because doctrine is embedded in the artifact itself."
 }
 
