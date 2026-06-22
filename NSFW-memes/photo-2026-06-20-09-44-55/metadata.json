@@ -1,11 +1,16 @@
 ﻿{
-  "slug": "photo-2026-06-20-09-44-55",
-  "title": "Schrodingers Ansvar",
-  "created": "2026-06-20",
-  "status": "candidate",
-  "tags": ["nsfw", "meme", "accountability", "satire", "swedish"],
-  "source_asset": "assets/original",
-  "selected_export": "assets/original.jpg",
-  "notes": "Strong candidate. Very self-explanatory process-theater and ownership-diffusion satire."
+    "slug":  "photo-2026-06-20-09-44-55",
+    "title":  "Schrodingers Ansvar",
+    "created":  "2026-06-20",
+    "status":  "candidate",
+    "tags":  [
+                 "nsfw",
+                 "meme",
+                 "accountability",
+                 "satire",
+                 "swedish"
+             ],
+    "source_asset":  "assets/original.jpg",
+    "selected_export":  "assets/original.jpg",
+    "notes":  "Strong candidate. Very self-explanatory process-theater and ownership-diffusion satire."
 }
-

@@ -1,0 +1,21 @@
+﻿{
+  "slug": "three-brothers-of-thinking-alt-a",
+  "title": "The Three Brothers Of Thinking (Alternate A)",
+  "created": "2026-06-22",
+  "status": "candidate",
+  "tags": ["nsfw", "meme", "reasoning", "evidence-man", "steelman", "strawman", "alternate"],
+  "source_asset": "assets/original.png",
+  "selected_export": "",
+  "concept": "Cleaner alternate render of strawman, steelman, and evidence-first reasoning roles.",
+  "origin_campaign": "EVIDENCE-MAN-REVERSE-ENGINEER",
+  "origin_campaign_folder": "C:/2/B1C3/B1C3-COMEDY/campaigns/evidence-man",
+  "origin_asset": "5513f20d-187f-4baf-91cb-acf601ec2734.png",
+  "variant_of": "evidence-man-three-brothers-of-thinking",
+  "review_required": true,
+  "review_reason": "Provocative/crass rhetorical framing requires explicit educational context at publish time.",
+  "creator_context": "multi-human-plus-ai",
+  "publishing_posture": "inspectable-doctrine-artifact",
+  "reverse_engineered": true,
+  "notes": "Alternate A from Evidence Man campaign. Lower visual density while preserving core reasoning doctrine."
+}
+

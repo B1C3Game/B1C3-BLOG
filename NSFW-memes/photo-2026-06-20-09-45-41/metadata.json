@@ -1,11 +1,16 @@
 ﻿{
-  "slug": "photo-2026-06-20-09-45-41",
-  "title": "Mirror Doctrine",
-  "created": "2026-06-20",
-  "status": "candidate",
-  "tags": ["nsfw", "meme", "governance", "satire", "swedish"],
-  "source_asset": "assets/original",
-  "selected_export": "assets/original.jpg",
-  "notes": "Strong candidate. Self-explanatory institutional satire with clear doctrine framing."
+    "slug":  "photo-2026-06-20-09-45-41",
+    "title":  "Mirror Doctrine",
+    "created":  "2026-06-20",
+    "status":  "candidate",
+    "tags":  [
+                 "nsfw",
+                 "meme",
+                 "governance",
+                 "satire",
+                 "swedish"
+             ],
+    "source_asset":  "assets/original.jpg",
+    "selected_export":  "assets/original.jpg",
+    "notes":  "Strong candidate. Self-explanatory institutional satire with clear doctrine framing."
 }
-

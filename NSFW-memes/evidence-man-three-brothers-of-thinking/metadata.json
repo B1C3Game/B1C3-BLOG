@@ -1,0 +1,20 @@
+﻿{
+  "slug": "evidence-man-three-brothers-of-thinking",
+  "title": "The Three Brothers Of Thinking",
+  "created": "2026-06-22",
+  "status": "candidate",
+  "tags": ["nsfw", "meme", "reasoning", "evidence-man", "steelman", "strawman"],
+  "source_asset": "assets/original.png",
+  "selected_export": "",
+  "concept": "Reasoning quality rises when argument style is separated from evidence discipline.",
+  "origin_campaign": "EVIDENCE-MAN-REVERSE-ENGINEER",
+  "origin_campaign_folder": "C:/2/B1C3/B1C3-COMEDY/campaigns/evidence-man",
+  "origin_asset": "313b2f18-0060-4476-b86e-cb42173f9d31.png",
+  "review_required": true,
+  "review_reason": "Provocative/crass rhetorical framing requires explicit educational context at publish time.",
+  "creator_context": "multi-human-plus-ai",
+  "publishing_posture": "inspectable-doctrine-artifact",
+  "reverse_engineered": true,
+  "notes": "Canonical import from Evidence Man campaign. Compares strawman, steelman, and evidence-first posture."
+}
+

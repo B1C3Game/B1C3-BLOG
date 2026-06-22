@@ -1,0 +1,12 @@
+{
+  "slug": "structure-is-not-neutral",
+  "title": "Structure Is Not Neutral",
+  "created": "2026-06-22",
+  "status": "candidate",
+  "tags": ["nsfw", "meme", "doctrine", "epistemology", "information-architecture", "spoc"],
+  "source_asset": "assets/original.png",
+  "selected_export": "",
+  "origin_fragment": "NSFW-memes/architectural-work/0.md",
+  "reverse_engineered": false,
+  "notes": "Fragment-sourced concept. Core doctrine: every structure preserves some information and destroys other information. Prompt templates, slugs, registries, SPOCs all compress reality into a frame. The frame changes what is visible. Originally surfaced during NSFW gallery architecture audit."
+}

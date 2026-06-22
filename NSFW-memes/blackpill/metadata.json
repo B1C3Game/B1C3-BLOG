@@ -4,7 +4,7 @@
   "created": "2026-06-20",
   "status": "candidate",
   "tags": ["nsfw", "meme", "mindset", "agency", "satire"],
-  "source_asset": "assets/original",
-  "selected_export": "",
+  "source_asset": "assets/original.png",
+  "selected_export": "assets/original.png",
   "notes": "New prompt concept: blackpill reframed as realization phase rather than identity lock."
 }

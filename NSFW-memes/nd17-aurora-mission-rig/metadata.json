@@ -1,0 +1,20 @@
+﻿{
+  "slug": "nd17-aurora-mission-rig",
+  "title": "ND-17 Aurora Mission Rig",
+  "created": "2026-06-22",
+  "status": "candidate",
+  "tags": ["nsfw", "meme", "field-ops", "systems-thinking", "mission-readiness"],
+  "source_asset": "assets/original.png",
+  "selected_export": "assets/original.png",
+  "concept": "Mission readiness as a systems discipline, not just raw capability.",
+  "origin_import_date": "2026-06-22",
+  "origin_folder": "asdf987ojkq345",
+  "origin_asset": "a1dc1fda-896c-4373-a90b-f242b861875d.png",
+  "reverse_engineered": true,
+  "review_required": true,
+  "review_reason": "Military-adjacent visual language requires explicit framing as systems-literacy doctrine artifact.",
+  "creator_context": "anonymous-import",
+  "publishing_posture": "inspectable-doctrine-artifact",
+  "notes": "Promoted from anonymous staging folder. Reverse-engineered from image inspection only, original prompt trace unavailable."
+}
+
