@@ -1,0 +1,15 @@
+{
+  "slug": "t3-capability-first-navigation",
+  "title": "T3 Capability-First Navigation",
+  "status": "published-limited",
+  "publishedAt": "2026-06-24",
+  "campaignSource": "C:/2/B1C3/B1C3-COMEDY/campaigns/T3",
+  "assets": {
+    "primary": "assets/primary.png",
+    "counterpart": "assets/counterpart.png"
+  },
+  "docs": {
+    "prompt": "PROMPT_CHATGPT.md",
+    "memeCard": "MEME_CARD.md"
+  }
+}
