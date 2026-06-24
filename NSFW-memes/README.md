@@ -83,3 +83,12 @@ See also: `../nsfw/NSFW-PUBLISHING-WORKFLOW.md`
 - Keep prompt language explicit and reproducible.
 - Keep meme explanations concrete, no hidden inside jokes.
 - Avoid putting sensitive personal data in prompts or metadata.
+
+## Certification
+
+This folder is generation and packaging infrastructure.
+Certification and publish eligibility are governed in:
+
+- `C:\2\B1C3\B1C3-COMEDY\NSFW-CERTIFICATION-STANDARD.md`
+- `C:\2\B1C3\B1C3-COMEDY\CORE-READY-CHECKLIST.md`
+- `C:\2\B1C3\B1C3-COMEDY\PUBLISHING-NSFW-BLOG.md`
