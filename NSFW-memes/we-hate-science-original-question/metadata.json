@@ -1,0 +1,23 @@
+﻿{
+    "slug":  "we-hate-science-original-question",
+    "title":  "The Original Question",
+    "created":  "2026-06-25",
+    "status":  "published",
+    "tags":  [
+                 "nsfw",
+                 "meme",
+                 "research-drift",
+                 "institutional-satire",
+                 "b1c3"
+             ],
+    "source_asset":  "assets/original.png",
+    "selected_export":  "exports/v1.png",
+    "concept":  "Institutions can optimize meta-layers while the originating question disappears.",
+    "origin_campaign":  "we-hate-science",
+    "origin_campaign_folder":  "C:/2/B1C3/B1C3-COMEDY/campaigns/we-hate-science.md",
+    "origin_asset":  "42d4d67c-6ad0-4c31-8a37-cecd51d5dbd5.png",
+    "poster_role":  "middle",
+    "review_required":  false,
+    "publishing_posture":  "process-critique-not-anti-science",
+    "notes":  "Approved in freeze pass. Post 2 in sequence. Published to static/images as nsfw-we-hate-science-original-question-v1.png"
+}

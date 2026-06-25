@@ -1,10 +1,11 @@
 ﻿# NSFW Meme Index
 
-Generated: 2026-06-22 20:32:58
+Generated: 2026-06-25 18:12:32
 
 ## Meme Folders
 
 - 740 (740)
+- Accomplishment in Coherence (accomplishment-in-coherence)
 - architectural-work (architectural-work)
 - asdf987ojkq345 (asdf987ojkq345)
 - Authority Void Exploitation (authority-void-exploitation)
@@ -12,8 +13,10 @@ Generated: 2026-06-22 20:32:58
 - Consensus Capture Detection (consensus-capture-detection)
 - Credibility Erosion Mechanics (credibility-erosion-mechanics)
 - Delegation Failure Cascade (delegation-failure-cascade)
+- Doctrine Is Dormant Capability (doctrin-is-dormant)
 - The Three Brothers Of Thinking (evidence-man-three-brothers-of-thinking)
 - Evil Witch Grind (evil-witch-grind)
+- Feelings Allowed, Residency Denied (feelings-allowed)
 - Identity Threat Amplification (identity-threat-amplification)
 - Information Moat Defense (information-moat-defense)
 - Institutional Apparatus Critique (institutional-apparatus-critique)
@@ -46,9 +49,13 @@ Generated: 2026-06-22 20:32:58
 - Varg i Veum, Investigate Before You Decide (poc-08-varg-i-veum)
 - Power Vacuum Collapse Pattern (power-vacuum-collapse-pattern)
 - Structure Is Not Neutral (structure-is-not-neutral)
+- T3 Capability-First Navigation (t3-capability-first-navigation)
 - The Three Brothers Of Thinking (Alternate A) (three-brothers-of-thinking-alt-a)
 - Time Traveling Liver-Eating Brute (time-traveling-liver-eating-brute)
 - Trust Cascade Failure Signals (trust-cascade-failure-signals)
+- Where Is The Next Anchor (we-hate-science-anchor-test)
+- Anchor Test (Steelman) (we-hate-science-anchor-test-steelman)
+- The Original Question (we-hate-science-original-question)
 
 ## Conventions
 

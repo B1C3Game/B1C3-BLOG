@@ -1,0 +1,24 @@
+﻿{
+    "slug":  "doctrin-is-dormant",
+    "title":  "Doctrine Is Dormant Capability",
+    "created":  "2026-06-25",
+    "status":  "published",
+    "tags":  [
+                 "nsfw",
+                 "meme",
+                 "doctrine",
+                 "assumption-check",
+                 "operations",
+                 "b1c3"
+             ],
+    "source_asset":  "assets/original.png",
+    "selected_export":  "exports/v1.png",
+    "concept":  "Doctrine is dormant capability that gets activated when context shifts and assumptions must be re-examined.",
+    "origin_campaign":  "260625/doctrin-is-dormant",
+    "origin_campaign_folder":  "C:/2/B1C3/B1C3-COMEDY/campaigns/260625/doctrin-is-dormant",
+    "origin_asset":  "35b25441-c74b-48db-8845-a5b2e346c7c1.png",
+    "poster_role":  "single-poster",
+    "review_required":  false,
+    "publishing_posture":  "operational-doctrine",
+    "notes":  "Reverse-engineered from chatdump and final render. Published to static/images as nsfw-doctrin-is-dormant-v1.png"
+}

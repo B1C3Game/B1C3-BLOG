@@ -1,0 +1,24 @@
+﻿{
+    "slug":  "feelings-allowed",
+    "title":  "Feelings Allowed, Residency Denied",
+    "created":  "2026-06-25",
+    "status":  "published",
+    "tags":  [
+                 "nsfw",
+                 "meme",
+                 "emotional-governance",
+                 "resentment",
+                 "satire",
+                 "b1c3"
+             ],
+    "source_asset":  "assets/original.png",
+    "selected_export":  "exports/v1.png",
+    "concept":  "Anger is valid as temporary processing, but revenge rumination is not a place to live.",
+    "origin_campaign":  "260625/feelings-allowed",
+    "origin_campaign_folder":  "C:/2/B1C3/B1C3-COMEDY/campaigns/260625/feelings-allowed",
+    "origin_asset":  "Messenger_creation_DC4E02C1-DAB6-41B1-8027-B17368DDCEAF (2).png",
+    "poster_role":  "single-poster",
+    "review_required":  false,
+    "publishing_posture":  "compassionate-satire",
+    "notes":  "Reverse-engineered from final render without chat transcript dependency. Published to static/images as nsfw-feelings-allowed-v1.png"
+}
