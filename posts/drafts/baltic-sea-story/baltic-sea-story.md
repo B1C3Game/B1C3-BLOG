@@ -49,7 +49,7 @@ The sea carried cargo, but it also carried ideas. Dialects changed. Recipes spre
 The Baltic has always connected people who otherwise might have remained strangers.
 
 ![Bird's-eye Baltic transport corridor with ferries, fishing boats, cargo ships, sailboats, and migration overhead](../../../static/images/baltic-story-03-highway-corridor.png)
-*The Highway. The Baltic as connector, not border.*
+*The Highway. The Baltic as connector, not a border.*
 
 ## 4. Food As Cultural Memory
 
@@ -64,7 +64,7 @@ This is not mainly a nutrition argument. It is a continuity argument.
 Some recipes only make sense because this sea exists in this climate with this history.
 
 ![Baltic table scene with smoked fish, potatoes, bread, butter, onions, and simple everyday tableware](../../../static/images/baltic-story-04-baltic-table.png)
-*The Baltic Table. Culture carried through food, routine, and memory.*
+*The Baltic Table. Culture carried through food, routine, and shared memory.*
 
 ## 5. Work, Infrastructure, Everyday Dependence
 
@@ -95,7 +95,7 @@ Myth does not prove science. It proves long attention.
 People project stories onto places that matter to survival.
 
 ![Moonlit Baltic shoreline with fog, standing stones, and an ambiguous silhouette near the waterline](../../../static/images/baltic-story-05-mythology-without-fantasy.png)
-*Mythology Without Fantasy. Mystery emerging from generations of attention to water.*
+*Mythology Without Fantasy. Mystery shaped by generations of close attention to water.*
 
 ## 7. Why This Story Matters Now
 
@@ -116,7 +116,7 @@ This place matters.
 And if we talk about its future, we should remember its biography, not only its metrics.
 
 ![Blue-hour Baltic shoreline with weathered jetty, mooring posts, and traces of long-term coastal use](../../../static/images/baltic-story-07-sea-remembers.png)
-*The Sea Remembers. Generations passed, the sea kept their traces.*
+*The Sea Remembers. Generations passed; the sea kept their traces.*
 
 ![Calm Baltic water at dusk with a solitary navigation marker and soft horizon light](../../../static/images/baltic-story-08-final-marker.png)
-*Final Reflection. A quiet marker in open water, orientation before conclusion.*
+*Final Reflection. A quiet marker in open water before any conclusion.*
