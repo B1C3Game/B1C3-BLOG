@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proxy Drift Is Not the Doctrine, It Is One Mechanism | B1C3 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mission drift is the phenomenon. Proxy drift is one major mechanism. A doctrine framing for inspectable correction in complex systems.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="canonical" href="https://b1c3game.github.io/B1C3-BLOG/posts/proxy-drift-is-not-the-doctrine-it-is-one-mechanism.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Proxy Drift Is Not the Doctrine, It Is One Mechanism | B1C3 Blog">
+  <meta property="og:description" content="Mission drift is the phenomenon. Proxy drift is one mechanism. Drift is dynamic, alignment must be actively maintained.">
+  <meta property="og:url" content="https://b1c3game.github.io/B1C3-BLOG/posts/proxy-drift-is-not-the-doctrine-it-is-one-mechanism.html">
+  <meta property="og:image" content="https://b1c3game.github.io/B1C3-BLOG/static/images/proxy-drift-mission-alignment-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Proxy Drift Is Not the Doctrine, It Is One Mechanism | B1C3 Blog">
+  <meta name="twitter:description" content="Mission drift is the phenomenon. Proxy drift is one mechanism. Drift is dynamic, alignment must be actively maintained.">
+  <meta name="twitter:image" content="https://b1c3game.github.io/B1C3-BLOG/static/images/proxy-drift-mission-alignment-hero.png">
+  <link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
+  <script src="../js/analytics-config.js"></script>
+  <script defer src="../js/analytics.js"></script>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="https://b1c3.dev/">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Blog</a>
+      <a href="https://b1c3.dev/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="article-hero reveal">
+      <p class="eyebrow">Doctrine</p>
+      <h1>Proxy Drift Is Not the Doctrine, It Is One Mechanism</h1>
+      <p class="lead">Mission drift is the phenomenon. Proxy drift is one major mechanism. The goal is not blame, but inspectable correction.</p>
+      <p class="post-date">Published: 2026-06-26</p>
+    </section>
+
+    <article class="panel post reveal">
+      <div class="post-content">
+        <figure class="post-image">
+          <img
+            src="../static/images/proxy-drift-mission-alignment-hero.png"
+            alt="Mission alignment spine pulled by five drift vectors and corrected by reconnection loops"
+            loading="lazy"
+            width="1672"
+            height="941"
+          />
+          <figcaption>Mission Drift as umbrella, with correction paths that reconnect decisions to reality.</figcaption>
+        </figure>
+
+        <p>I did not arrive here from theory first.</p>
+
+        <p>I arrived here from repeated failure patterns in real work:</p>
+        <ul>
+          <li>reports optimized instead of outcomes,</li>
+          <li>outputs delivered instead of adoption,</li>
+          <li>activity confused with progress,</li>
+          <li>meetings substituting for decisions,</li>
+          <li>compliance replacing responsibility.</li>
+        </ul>
+
+        <p>Later I found established language around the same mechanism: Goodhart's Law, Campbell's Law, metric fixation, goal displacement, proxy failure. Useful references, but not the center of this doctrine.</p>
+
+        <p>The center is mission drift.</p>
+
+        <h2>Mission Drift Is the Umbrella</h2>
+
+        <p>The current B1C3 framing is:</p>
+
+        <pre><code>Mission Drift
+|
+|- Proxy Drift
+|- Knowledge Drift
+|- Ownership Drift
+|- Coordination Drift
+|- Narrative Drift</code></pre>
+
+        <p>This matters because it changes the scope.</p>
+
+        <p>If we call everything proxy capture, we flatten the system. If we model mission drift as an umbrella, we can inspect multiple mechanisms without pretending they are the same failure.</p>
+
+        <h2>Why "Drift" Beats "Capture"</h2>
+
+        <p>"Capture" sounds like an event with villains. "Drift" describes dynamics in complex systems.</p>
+
+        <p>Systems move unless actively corrected.</p>
+
+        <p>That means drift can happen even when:</p>
+        <ul>
+          <li>nobody is lying,</li>
+          <li>nobody is malicious,</li>
+          <li>nobody is obviously incompetent.</li>
+        </ul>
+
+        <p>Teams change. Funding changes. Software changes. Reporting changes. Institutional memory decays. Mission alignment moves unless someone deliberately reconnects it.</p>
+
+        <p>This is engineering language, not moral language.</p>
+
+        <h2>Proxies Are Not the Enemy</h2>
+
+        <p>A proxy is unavoidable.</p>
+
+        <p>You cannot directly measure "mission success" in one perfect variable. So you use layers:</p>
+
+        <p>Mission -> Proxy -> Measurement -> Dataset -> Dashboard -> Decision.</p>
+
+        <p>Example:</p>
+
+        <p>Healthy Baltic Sea -> nutrient concentration -> sampling instrument -> dataset -> dashboard status -> funding priorities.</p>
+
+        <p>Nothing is wrong with this chain by default. The danger starts when the chain is treated as reality itself.</p>
+
+        <h2>Four Failure Modes Inside Proxy Drift</h2>
+
+        <p>Proxy drift is not one thing.</p>
+
+        <ol>
+          <li><strong>Proxy drift from reality:</strong> The indicator no longer predicts what matters.</li>
+          <li><strong>Measurement drift:</strong> The proxy is conceptually fine, but collection becomes inconsistent (definitions, sensors, methods, organizations).</li>
+          <li><strong>Optimization drift:</strong> People optimize the number instead of the goal. Classic Goodhart dynamics.</li>
+          <li><strong>Interpretation drift:</strong> The dashboard state is treated as reality, instead of "the indicator currently looks healthy."</li>
+        </ol>
+
+        <p>These are different failure modes and need different interventions.</p>
+
+        <h2>The Five Drift Questions</h2>
+
+        <p>Each drift type maps to a diagnostic question:</p>
+        <ul>
+          <li>Mission Drift: Are we still solving the original problem?</li>
+          <li>Proxy Drift: Do our measures still represent reality?</li>
+          <li>Knowledge Drift: Can evidence reach decisions?</li>
+          <li>Ownership Drift: Is responsibility attached to action?</li>
+          <li>Coordination Drift: Can actors work together effectively?</li>
+          <li>Narrative Drift: Does the story still fit the evidence?</li>
+        </ul>
+
+        <p>This is the point: not labels, but inspectable questions.</p>
+
+        <h2>Why "Nothing Is Sacred" Keeps Surviving</h2>
+
+        <p>If a proxy becomes sacred, correction dies.</p>
+
+        <p>The KPI becomes sacred. The process becomes sacred. The method becomes sacred. The funding logic becomes sacred.</p>
+
+        <p>Then nobody can ask whether it still points at the mission.</p>
+
+        <p>In that sense, "Nothing Is Sacred" is not anti-principle. It is anti-drift discipline. Everything stays inspectable.</p>
+
+        <h2>Baltic Sea Work as a Drift Test</h2>
+
+        <p>This is why Baltic work keeps circling the same operational questions:</p>
+        <ul>
+          <li>Was output actually used?</li>
+          <li>Who carried evidence from producer to decision-maker?</li>
+          <li>What happened after project closure?</li>
+        </ul>
+
+        <p>A project can score high on reports, dissemination, milestones, and KPI delivery while generating near-zero lasting change.</p>
+
+        <p>That is mission drift with clean paperwork.</p>
+
+        <h2>Intervention Logic</h2>
+
+        <p>Each drift implies a reconnection move:</p>
+        <ul>
+          <li>Mission Drift -> reconnect to purpose.</li>
+          <li>Proxy Drift -> reconnect measures to reality.</li>
+          <li>Knowledge Drift -> reconnect evidence to decisions.</li>
+          <li>Ownership Drift -> reconnect responsibility to action.</li>
+          <li>Coordination Drift -> reconnect actors to one another.</li>
+          <li>Narrative Drift -> reconnect stories to evidence.</li>
+        </ul>
+
+        <p>This is the operational doctrine: diagnose where alignment broke, then execute the smallest action that reconnects reality to decisions.</p>
+
+        <h2>Close</h2>
+
+        <p>Proxy drift is not the doctrine. Mission drift is.</p>
+
+        <p>Proxy drift is one of the most common ways mission drift becomes normalized.</p>
+
+        <p>So the work is not to abolish proxies. The work is to keep them inspectable, revisable, and subordinate to reality.</p>
+      </div>
+
+      <div class="post-nav">
+        <a href="../index.html" class="back-link">&larr; Back to blog</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
