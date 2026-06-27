@@ -1,0 +1,1 @@
+﻿# MEME CARD: No Ansvar Diffusion  Definition: A visual about unresolved interpretation: same signal, multiple plausible readings, and no immediate closure.  When to use: Use when discussing ambiguity tolerance, curiosity, and premature certainty traps.  Lead: Recovered image-to-image concept on uncertainty, curiosity, and responsibility ambiguity.

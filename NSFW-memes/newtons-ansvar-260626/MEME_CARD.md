@@ -1,0 +1,1 @@
+﻿# MEME CARD: Newtons Ansvar  Definition: One question, one owner, one accepted transfer. Responsibility remains with the bearer until explicitly moved.  When to use: Use when clarifying ownership, mandate, transfer conditions, and accountability boundaries.  Lead: Satirical institutional poster treating accountability as a measurable physical law.

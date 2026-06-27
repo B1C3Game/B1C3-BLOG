@@ -1,0 +1,1 @@
+﻿# MEME CARD: Aliens Exist First Contact  Definition: Not about aliens as certainty, about observation discipline before explanation.  When to use: Use when teaching inquiry, hypothesis restraint, and evidence-first interpretation.  Lead: First-contact cinematic framing for disciplined inquiry under uncertainty.

@@ -1,0 +1,1 @@
+﻿# MEME CARD: EGO Reflective  Definition: Ego as system filter: confidence can stabilize action, but identity-performance can distort feedback.  When to use: Use when discussing self-image versus signal, especially in leadership, creative work, or high-pressure judgment.  Lead: Editorial concept about ego, persona, and reflective self-inspection under pressure.

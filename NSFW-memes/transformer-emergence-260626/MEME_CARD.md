@@ -1,0 +1,1 @@
+﻿# MEME CARD: Transformer Emergence  Definition: Everything can be divided, but parts alone do not define system-level meaning.  When to use: Use when teaching emergence, systems behavior, and reduction versus integration.  Lead: Toy Transformer concept visual about emergence and whole-versus-part meaning.

@@ -1,0 +1,1 @@
+﻿# MEME CARD: Doctrinephobia Framework  Definition: How fear can reframe neutral structure as manipulation before comprehension.  When to use: Use when discussing framing bias, literacy gaps, and emotional interpretation errors.  Lead: Split-scene satire: fear-distorted reading versus calm conceptual understanding.

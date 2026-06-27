@@ -1,0 +1,1 @@
+﻿# MEME CARD: Desktop Vibes Inspirational  Definition: A productivity visual that values clarity, rhythm, and sustained attention over noise.  When to use: Use when signaling build mode, focus culture, and intentional work cadence.  Lead: Image-to-image workspace poster emphasizing calm focus and disciplined execution.
