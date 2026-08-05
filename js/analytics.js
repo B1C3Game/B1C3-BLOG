@@ -22,16 +22,19 @@
   }
 
   function ensureCounterElement() {
-    const postDate = document.querySelector(".article-hero .post-date");
-    if (!postDate) {
-      return null;
-    }
-
+    // First, check if there's already a counter element on the page
     let counter = document.querySelector(".analytics-counter");
     if (counter) {
       return counter;
     }
 
+    // Try to find the post date element (for blog posts)
+    const postDate = document.querySelector(".article-hero .post-date");
+    if (!postDate) {
+      return null;
+    }
+
+    // Create counter after post date
     counter = document.createElement("p");
     counter.className = "analytics-counter";
     counter.textContent = "Reads: ...";
