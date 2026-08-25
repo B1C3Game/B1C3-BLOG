@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vector Harvest: Why It's Not Just Fetching Points Forever | B1C3 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A weekend game prototype built from a chain-of-vectors reachability puzzle, and why continuous wealth taxation—not scarcity—stops it from being a pure fetch quest.">
+  <link rel="canonical" href="https://b1c3game.github.io/B1C3-BLOG/posts/vector-harvest-1234.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Vector Harvest: Why It's Not Just Fetching Points Forever | B1C3 Blog">
+  <meta property="og:description" content="A dependency-free movement game where continuous wealth taxation, not scarcity, stops the naive greedy-harvest strategy from winning.">
+  <meta property="og:url" content="https://b1c3game.github.io/B1C3-BLOG/posts/vector-harvest-1234.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="../js/analytics-config.js"></script>
+  <script defer src="../js/analytics.js"></script>
+  <meta name="twitter:title" content="Vector Harvest: Why It's Not Just Fetching Points Forever">
+  <meta name="twitter:description" content="A movement-vector game prototype where continuous taxation, not scarcity, prevents the naive greedy-harvest strategy from winning.">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="https://b1c3.dev/">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Blog</a>
+      <a href="https://b1c3.dev/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <section class="article-hero reveal">
+      <p class="eyebrow">Game Design & Systems</p>
+      <h1>Vector Harvest: Why It's Not Just Fetching Points Forever</h1>
+      <p class="lead">A weekend prototype built from a chain-of-vectors reachability puzzle—and why continuous taxation, not scarcity, is what stops it from being a pure fetch quest.</p>
+      <p class="post-date">Published: 2026-08-25</p>
+    </section>
+    <article class="panel post reveal">
+      <div class="post-content">
+
+        <h2>Where This Came From</h2>
+        <p>It started as a math tangent, not a game idea. I was thinking about a chain of four connected segments — lengths 1, 2, 3, 4 — each pointing up, down, left, or right, anchored at the center of a grid. The question was simple: which coordinates can the far end actually reach?</p>
+        <p>The answer turned out to be a clean, almost elegant shape: a Manhattan-distance diamond of radius 10 (since 1+2+3+4=10), filled in a checkerboard pattern when all four segments are used, and nearly fully filled — with exactly 8 missing lattice points — once you allow skipping any segment.</p>
+        <p>That reachability puzzle turned into a movement vocabulary. A knight's move isn't a special piece anymore, it's just "2 perpendicular to 1." A rook-like slide is "3+4 in the same direction." Chess movement rules become emergent expressions of a small vector language instead of hardcoded per-piece behavior.</p>
+        <p>So I built a 2-hour POC: <strong>Vector Harvest: 1·2·3·4</strong>. Four movement links, one route per turn, pickups scattered on a 20×20 board.</p>
+
+        <h2>The Obvious Failure Mode</h2>
+        <p>Give a player four movement vectors and a board full of point values, and the naive design writes itself: harvest everything you can reach, forever, and the score goes up forever. That's not a game, that's a treadmill.</p>
+        <p>The interesting design question wasn't "how do you move" — the vector chain answered that. It was <strong>"what stops a player from just fetching points forever?"</strong></p>
+
+        <h2>The Answer: Continuous Taxation, Not Scarcity</h2>
+        <p>The obvious fixes are the boring ones: cap the number of pickups, make them run out, add a timer. Vector Harvest does something different — it taxes <em>movement itself</em>, continuously, regardless of whether you collect anything.</p>
+        <ul>
+          <li>Every cell you enter costs tax, whether or not you harvest there.</li>
+          <li>Passing through a cell costs half its displayed tax. Ending a segment there costs the full amount.</li>
+          <li>Tax scales with the round number: <code>0.0025% × round</code>, with visible 2× and 5× outlier cells.</li>
+          <li>At the end of each round, total capital — not just that round's harvest — gets taxed again: <code>closing capital = floor((opening capital + harvest) × (1 − wealth tax rate))</code>.</li>
+        </ul>
+        <p>This means bigger, farther-reaching routes aren't automatically better. A length-4 segment pays half tax on its first three cells and full tax on the fourth — so reach has a built-in cost curve, not a flat one. And because the <em>entire capital pool</em> is taxed at round end, simply accumulating points is actively penalized. Hoarding is the losing strategy, not the winning one.</p>
+
+        <h2>Why This Matters More Than It Looks</h2>
+        <p>The naive version of this game would let skill translate directly into an unbounded score. The tax system breaks that assumption on purpose. Instead of "more efficient route = strictly higher score," the system asks: is this specific route worth what it costs to run?</p>
+        <p>That's a different kind of judgment than pure optimization. It's closer to portfolio thinking than speed-running: some routes are locally efficient but not worth the compounding tax exposure. The playtest numbers make the shape of this visible:</p>
+        <ul>
+          <li>First vanilla run: <strong>66</strong></li>
+          <li>Practiced vanilla run: <strong>99</strong></li>
+          <li>Search-assisted vanilla run: <strong>157</strong></li>
+          <li>First full scaling campaign (with upgrade choices): <strong>11,781</strong></li>
+        </ul>
+        <p>The jump from ~157 to ~11,781 isn't from moving better. It comes from the Treasury mechanic: cumulative tax paid converts into a small public benefit (extended pickup lifetime), and round-end upgrade offers (yield, market density, timed lifetime, tax shelters) let you actually spend into reducing future tax exposure. The system doesn't remove the tax pressure — it gives you legitimate ways to negotiate with it.</p>
+
+        <h2>The Design Lesson</h2>
+        <p>A system that only rewards "collect everything you can reach" doesn't need a player, it needs a script. What makes Vector Harvest a game instead of a treadmill is that the cost structure competes directly with the reward structure, at every single move, not just at some end-of-level checkpoint.</p>
+        <p>The tax isn't a penalty bolted onto the fun part. It <strong>is</strong> the game. The four-vector movement language gave the project its shape; the continuous taxation gave it a reason to stop being a fetch quest.</p>
+
+        <h2>POC Boundary</h2>
+        <p>This build deliberately excludes enemies, inventory, tax-reset pickups, and narrative progression. It tests one thing: whether movement-driven harvesting stays interesting when endpoint tax terrain and player-chosen scaling compete against continuous wealth taxation. That's the whole experiment.</p>
+        <p>Play it: <a href="https://b1c3game.github.io/vector-harvest/" target="_blank" rel="noreferrer">b1c3game.github.io/vector-harvest</a></p>
+
+      </div>
+    </article>
+  </main>
+</body>
+</html>
