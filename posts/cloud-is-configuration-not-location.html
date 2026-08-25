@@ -4,184 +4,282 @@
   <meta charset="UTF-8">
   <title>Cloud is Configuration, Not Location | B1C3 Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Why the cloud vs on-premises debate misses the point. Understanding architectural properties, EU policy, and the real capability gap.">
+  <meta name="description" content="Cloud is an operating model, sovereignty is a control requirement, and real public-sector decisions must test products against both.">
   <link rel="canonical" href="https://b1c3game.github.io/B1C3-BLOG/posts/cloud-is-configuration-not-location.html">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Cloud is Configuration, Not Location | B1C3 Blog">
-  <meta property="og:description" content="Why the cloud vs on-premises debate misses the point. Understanding architectural properties, EU policy, and the real capability gap.">
+  <meta property="og:description" content="Cloud is an operating model, sovereignty is a control requirement, and real public-sector decisions must test products against both.">
   <meta property="og:url" content="https://b1c3game.github.io/B1C3-BLOG/posts/cloud-is-configuration-not-location.html">
+  <meta property="og:image" content="https://b1c3game.github.io/B1C3-BLOG/static/images/og-default.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cloud is Configuration, Not Location | B1C3 Blog">
+  <meta name="twitter:description" content="Cloud is an operating model, sovereignty is a control requirement, and real public-sector decisions must test products against both.">
+  <meta name="twitter:image" content="https://b1c3game.github.io/B1C3-BLOG/static/images/og-default.jpg">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
   <link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cloud is Configuration, Not Location | B1C3 Blog">
-  <meta name="twitter:description" content="Why the cloud vs on-premises debate misses the point. Understanding architectural properties, EU policy, and the real capability gap.">
+  <script src="../js/analytics-config.js"></script>
+  <script defer src="../js/analytics.js"></script>
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a class="brand" href="https://b1c3.dev/">B1C3</a>
+    <a class="brand" href="https://b1c3game.github.io/B1C3-LANDING/" aria-label="B1C3 Home">B1C3</a>
     <nav aria-label="Primary">
       <a href="../index.html">Blog</a>
-      <a href="https://b1c3.dev/" target="_blank" rel="noreferrer">Home</a>
+      <a href="https://b1c3game.github.io/B1C3-LANDING/" target="_blank" rel="noreferrer">Home</a>
       <a href="https://github.com/B1C3Game/B1C3-BLOG" target="_blank" rel="noreferrer">GitHub</a>
     </nav>
   </header>
+
   <main>
     <section class="article-hero reveal">
       <p class="eyebrow">Infrastructure &amp; Policy</p>
       <h1>Cloud is Configuration, Not Location</h1>
-      <p class="lead">Why the cloud vs on-premises debate misses the point, and what Swedish government actually needs.</p>
-      <p class="post-date">Published: 2026-06-11</p>
+      <p class="lead">Cloud is an operating model. Sovereignty is a control requirement. Products decide which combinations are actually deployable.</p>
+      <p class="post-date">Published: 2026-06-11 · Updated: 2026-08-25</p>
     </section>
+
     <article class="panel post reveal">
       <div class="post-content">
-        <p>When a Swedish government agency needs to move Teams, Confluence, and critical infrastructure to the cloud, a conversation should be simple. Instead, it fractures into three separate arguments happening in the same room.</p>
+        <p>When a Swedish government agency discusses moving Teams, Confluence, or critical infrastructure to the cloud, one conversation often fractures into three.</p>
 
-        <p>The lawyers are asking: <em>Where do our citizens' data live, legally?</em> The provisioning engineers are saying: <em>We can spin up a server anywhere.</em> The decision-makers are wondering: <em>What's the actual difference between cloud and our existing servers?</em></p>
+        <p>The lawyers ask: <em>Who can legally reach the data?</em></p>
 
-        <p>They're all technically correct. And they're all talking past each other.</p>
+        <p>The provisioning engineers say: <em>We can put a server anywhere.</em></p>
 
-        <p>The problem isn't Atlassian, cloud providers, or Swedish regulation. The problem is that "cloud" has become a word that means different things to different people, and nobody pauses to name what they actually mean.</p>
+        <p>The decision-makers ask: <em>What is the practical difference between cloud and the servers we already have?</em></p>
+
+        <p>These are all valid questions. They are not the same question.</p>
+
+        <p>The confusion starts when "cloud" becomes shorthand for location, outsourcing, software as a service, American ownership, or somebody else's data center. Those things can overlap. None of them defines cloud by itself.</p>
+
+        <p>Cloud is an operating model. Sovereignty is a control requirement. A product is a set of deployment choices. If we collapse all three into one word, we can comply on paper and still build the wrong thing.</p>
 
         <h2>What "Cloud" Actually Means</h2>
 
-        <p>Here's the myth: <em>Cloud is just renting a server in someone else's datacenter.</em></p>
-
-        <p>Here's the reality: Cloud is a set of architectural properties. Some of those properties are:</p>
+        <p>The durable definition comes from <a href="https://csrc.nist.gov/pubs/sp/800/145/final" target="_blank" rel="noreferrer">NIST SP 800-145</a>. It describes cloud computing through five essential characteristics:</p>
 
         <ul>
-          <li><strong>Multi-tenancy</strong> (or isolation layers that simulate it): Multiple organizations on the same infrastructure</li>
-          <li><strong>Elasticity</strong>: Resources scale up or down based on demand, not pre-provisioned capacity</li>
-          <li><strong>Self-service provisioning</strong>: You deploy it yourself without filing a ticket</li>
-          <li><strong>Pay-per-use metering</strong>: You pay for what you use, not for peak capacity</li>
-          <li><strong>Automated updates and patches</strong>: New versions roll out continuously without your intervention</li>
-          <li><strong>Geographic distribution and redundancy</strong>: Your data and services live in multiple places</li>
+          <li>on-demand self-service;</li>
+          <li>broad network access;</li>
+          <li>resource pooling;</li>
+          <li>rapid elasticity;</li>
+          <li>measured service.</li>
         </ul>
 
-        <p>None of these properties require you to use AWS, Azure, or Google Cloud. They're architectural choices. They can exist in your own datacenter, in a cloud provider, or in a hybrid mix.</p>
+        <p>NIST also recognizes public, private, community, and hybrid cloud deployment models.</p>
 
-        <p>Once you see cloud this way, the confusion starts dissolving.</p>
+        <p>That matters because cloud is not defined by whose building contains the hardware. A private platform in a government-operated data center can have cloud characteristics. A rented virtual machine that still needs a manual ticket for every change may have fewer of them.</p>
 
-        <h2>Why Atlassian Went "Cloud Only"—And What That Really Means</h2>
+        <p>Some traits commonly associated with public SaaS, such as continuous vendor-controlled updates or global distribution, are not required by the definition. They are product and operating choices.</p>
 
-        <p>Atlassian didn't sunset their on-premises products for business reasons alone. They did it because Confluence cloud and Confluence on-premises are <em>architecturally different products</em>.</p>
+        <p>The more useful question is therefore not:</p>
+        <blockquote><p>Is it in the cloud or on-premises?</p></blockquote>
+        <p>It is:</p>
+        <blockquote><p>Which operating characteristics and control boundaries does this workload require, and which deployable service can provide them?</p></blockquote>
 
-        <p>The on-premises version assumes:</p>
+        <h2>Location Is Only One Control</h2>
+
+        <p>A Swedish cloud region can answer an important question: where is a particular service designed to store or process particular data?</p>
+
+        <p>It does not answer every other question:</p>
         <ul>
-          <li>Single-tenant isolation: Your data is siloed on your servers</li>
-          <li>Versioned releases: You decide when to upgrade</li>
-          <li>Feature stability: Certain features designed for on-premises are incompatible with multi-tenancy</li>
+          <li>Which company and jurisdiction govern the provider?</li>
+          <li>Can support staff outside Sweden or the EU access the service?</li>
+          <li>Who controls the encryption keys?</li>
+          <li>Where do identity, telemetry, backup, and billing dependencies live?</li>
+          <li>Can the agency continue during a provider or network outage?</li>
+          <li>Can the service be moved without rebuilding the organization around a new product?</li>
+          <li>Who can recover the service, and has recovery been tested?</li>
         </ul>
 
-        <p>The cloud version assumes:</p>
+        <p>AWS has a Stockholm region. Azure lists Sweden Central and Sweden South. That gives Swedish organizations more location options, but a region is not a complete sovereignty claim. Residency, jurisdiction, operational control, continuity, and exit are separate properties.</p>
+
+        <p>Sovereignty is therefore better treated as a control profile than as a map pin.</p>
+
+        <h2>Sweden Now Has a Cloud Policy</h2>
+
+        <p>An earlier version of this article argued that Sweden lacked a published strategy. That became false on 29 May 2026, when the government published <a href="https://www.regeringen.se/informationsmaterial/2026/05/en-molnpolicy-for-sverige--for-okad-sakerhet-effektivitet-och-innovation-i-den-offentliga-forvaltningen/" target="_blank" rel="noreferrer"><em>En molnpolicy för Sverige</em></a>, its first cloud policy for public administration.</p>
+
+        <p>The policy is more pragmatic than either "cloud first" or "keep everything Swedish."</p>
+
+        <p>It says each public actor remains responsible for its own assessment. Choices should be risk-based and reflect the workload's requirements for function, security, control (<em>rådighet</em>), sovereignty, robustness, and cost-effectiveness. It also says public administration can continue to use market-leading products from companies outside the EU where those requirements permit it.</p>
+
+        <p>That is a better framing than a universal rule. Information and services do not all carry the same legal, security, or continuity requirements.</p>
+
+        <p>But policy is not yet a deployable service catalogue. An implementation team still needs concrete answers:</p>
         <ul>
-          <li>Multi-tenant data model: Data from many organizations shares the same infrastructure (with strict isolation)</li>
-          <li>Continuous deployment: Updates roll out constantly</li>
-          <li>Feature alignment: Features are built differently to work at scale across thousands of tenants</li>
+          <li>Which information classes may use which service models?</li>
+          <li>Which products have been assessed, under which configurations and contracts?</li>
+          <li>What evidence is required for support access, recovery, and exit?</li>
+          <li>Which shared state-operated services are available now?</li>
+          <li>Who owns the decision when legal, security, architecture, and procurement assessments disagree?</li>
         </ul>
 
-        <p>This isn't a licensing decision; it's an architectural decision. Once you commit to multi-tenant architecture, maintaining two separate codebases—one for cloud, one for on-premises—becomes unsustainable. You have to choose one, and Atlassian chose cloud because that's where the operational leverage is: one version, one infrastructure, one deployment pipeline.</p>
+        <p>The strategy exists. The remaining gap is translating principles into repeatable decisions and usable platforms.</p>
 
-        <p>Their motive wasn't to maximize data control; it was to minimize operational complexity.</p>
+        <h2>The Legal Question Is Conditional</h2>
 
-        <h2>Why Sweden Needs Its Own Infrastructure</h2>
+        <p>It is too broad to say that American cloud providers are prohibited because US law conflicts with Swedish law.</p>
 
-        <p>GDPR and Swedish data sovereignty law aren't negotiable. They're also real constraints.</p>
+        <p>The real analysis is conditional.</p>
 
-        <p>A US cloud provider (AWS, Azure, Google) has legal obligations under the Patriot Act and other US law that can conflict with Swedish law. The political question—"Can we trust US providers?"—is secondary. The legal question is primary: <em>Can we operate within both jurisdictions at the same time?</em></p>
+        <p>The Swedish Authority for Privacy Protection, <a href="https://www.imy.se/en/organisations/data-protection/this-applies-accordning-to-gdpr/transfer-of-data-to-a-third-country/" target="_blank" rel="noreferrer">IMY</a>, explains that personal-data transfers outside the EU/EEA are permitted under defined conditions. Depending on the recipient and transfer, those can include an adequacy decision, participation in the EU-US Data Privacy Framework, Standard Contractual Clauses, Binding Corporate Rules, and supplementary safeguards.</p>
 
-        <p>The answer for Sweden is: build sovereign infrastructure.</p>
+        <p>The <a href="https://www.edpb.europa.eu/sme-data-protection-guide/international-data-transfers_en" target="_blank" rel="noreferrer">European Data Protection Board</a> also makes clear that these transfer mechanisms do not replace ordinary GDPR duties. Organizations still need a legal basis, data minimization, security, processor agreements where applicable, and in some cases a transfer impact assessment.</p>
 
-        <p>But here's the critical part: <strong>sovereign infrastructure doesn't mean rejecting cloud architecture</strong>.</p>
+        <p>Provider jurisdiction still matters. Sweden's cloud policy notes that companies in some countries may, under certain conditions, be required to disclose data to national authorities even when the data is stored elsewhere.</p>
 
-        <p>It means: <em>Apply cloud architectural properties to infrastructure you control.</em></p>
+        <p>The defensible conclusion is not "US cloud is illegal" or "a Swedish region solves it." It is:</p>
+        <blockquote><p>Map the actual transfers and access paths, identify the legal mechanism, assess the information's protection value, and decide whether the remaining risk is acceptable for that workload.</p></blockquote>
 
-        <h2>What On-Premises Cloud Actually Requires</h2>
+        <h2>Products Constrain Architecture</h2>
 
-        <p>If Sweden decides to run Confluence (or any complex service) on sovereign infrastructure, they can absolutely have cloud properties. It requires:</p>
+        <p>The discussion becomes concrete when a policy meets an actual product.</p>
 
+        <p>Atlassian says <a href="https://www.atlassian.com/licensing/data-center-end-of-life" target="_blank" rel="noreferrer">Confluence Data Center will reach end of life on 28 March 2029</a>. Standard subscriptions and affected Marketplace apps will become read-only. Atlassian says extended maintenance may exist for some customers by exception, but the general direction is clear: Confluence customers need a migration or replacement decision.</p>
+
+        <p>Atlassian presents this as a cloud-platform strategy centered on integrated products, AI, security, and faster innovation. We can debate the business incentives, but we should not state an unverified motive as fact. The operational consequence is enough: the generally available self-managed path is closing.</p>
+
+        <p>Microsoft Teams presents a different constraint. <a href="https://learn.microsoft.com/en-us/microsoftteams/teams-overview" target="_blank" rel="noreferrer">Microsoft's architecture documentation</a> describes Teams as part of Microsoft 365, built on services including Entra ID, Microsoft 365 Groups, Microsoft Graph, SharePoint, and Exchange Online. Microsoft documents how a tenant administers Teams. It does not offer the Teams service as software an agency can deploy onto its own Kubernetes cluster.</p>
+
+        <p>That means "put Teams and Confluence on sovereign Kubernetes" is not an architecture. Teams cannot simply be moved there, and Confluence Data Center has a vendor deadline.</p>
+
+        <p>For each product, the real options may be different:</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Deployment paths by workload">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Workload</th>
+                <th scope="col">Plausible paths</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Confluence</td>
+                <td>Atlassian Cloud, a future qualifying Atlassian deployment model, temporary Data Center operation, or product replacement</td>
+              </tr>
+              <tr>
+                <td>Teams</td>
+                <td>Microsoft 365 under an accepted control model, a future qualifying Microsoft offering, or product replacement</td>
+              </tr>
+              <tr>
+                <td>Custom applications</td>
+                <td>Public cloud, private cloud, coordinated state IT, colocation, or a hybrid combination</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>A sovereignty requirement can therefore force a product decision, not merely a hosting decision.</p>
+
+        <h2>What Private Cloud Actually Requires</h2>
+
+        <p>Private cloud is possible. Kubernetes is not what makes it cloud, and Kubernetes is not mandatory.</p>
+
+        <p>A credible private-cloud service does need capabilities such as:</p>
         <ul>
-          <li><strong>Kubernetes and containerization</strong>: Not optional. This is the baseline for elasticity and self-service.</li>
-          <li><strong>Infrastructure-as-Code</strong>: Terraform, Ansible, or similar. You're defining infrastructure declaratively, not clicking buttons.</li>
-          <li><strong>Continuous deployment pipeline</strong>: Automated tests, staged rollouts, automated rollbacks on failure.</li>
-          <li><strong>Monitoring and alerting</strong>: Not optional. If something breaks at 3 AM, someone needs to know.</li>
-          <li><strong>Backup and disaster recovery</strong>: More complex than a single box. You need multi-region failover, point-in-time recovery, and tested restoration procedures.</li>
-          <li><strong>Expertise to operate it</strong>: This is the actual cost. You need a team that understands distributed systems, Kubernetes, networking, and compliance.</li>
+          <li>automated and repeatable provisioning;</li>
+          <li>identity, policy, and secrets management;</li>
+          <li>patching and vulnerability management;</li>
+          <li>observability and incident response;</li>
+          <li>capacity and lifecycle management;</li>
+          <li>tested backup, recovery, and continuity procedures;</li>
+          <li>service ownership, support hours, and an on-call model;</li>
+          <li>cost and usage visibility;</li>
+          <li>a maintained service catalogue and supported application patterns.</li>
         </ul>
 
-        <p>Ballpark: That's a <strong>minimum of 3–5 full-time engineers</strong> to maintain this, plus on-call rotation. It's not a one-time project; it's an ongoing operational responsibility. And it takes <strong>18–24 months</strong> to get to operational maturity, assuming you have people with Kubernetes experience.</p>
+        <p>Kubernetes may be the right substrate for containerized custom applications. It may be the wrong substrate for a commercial SaaS product that is not available for customer deployment. Virtualization, managed platforms, and shared state-operated services can also deliver cloud characteristics.</p>
 
-        <h2>The Real Problem: Policy Pressure Without Strategy</h2>
+        <p>The staffing and timeline cannot be estimated honestly without scope. A small internal platform with business-hours support is not the same undertaking as a multi-site service for security-sensitive workloads with continuous support.</p>
 
-        <p>Here's what I'm seeing from conversations with colleagues managing Confluence: policy constraints arrive faster than strategy.</p>
+        <p>Instead of asserting "3 to 5 engineers and 18 to 24 months," define the service first:</p>
+        <ol>
+          <li>Which workloads and data classes are in scope?</li>
+          <li>What availability and recovery objectives apply?</li>
+          <li>Which capabilities already exist?</li>
+          <li>Which responsibilities belong to the platform team, application team, supplier, and security function?</li>
+          <li>What support and on-call coverage is required?</li>
+        </ol>
 
-        <p>The EU is explicit about this. In June 2026, the Commission released a Tech Sovereignty Package specifically designed to reduce European dependence on US cloud providers. The message is clear: strategic autonomy means sovereign infrastructure. AWS responded immediately by launching a "European Sovereign Cloud" service.</p>
+        <p>Only then does a staffing number mean anything.</p>
 
-        <p>But at the Swedish government level? There's no <em>published</em> roadmap. No <em>public</em> strategy. No <em>transparent</em> budget. Work might be happening—budget might exist—but it's not accessible unless you demand the documentation.</p>
+        <h2>Hybrid Is a Portfolio, Not a Compromise</h2>
 
-        <p>So what happens? Implementation teams (people like my colleagues) feel the pressure first. Compliance questions arrive. Legal constraints show up. Procurement gets more complex. But there's no clear answer to the foundational question: <em>What are we actually supposed to be building toward?</em></p>
+        <p>The practical path is usually hybrid, but not in the sense of putting every product in two places.</p>
 
-        <p>The provisioning tech says: <em>"It's just a server. We can stand up a VM in our datacenter."</em> That's technically correct, but it doesn't solve the architectural question.</p>
-
-        <p>The lawyer asks: <em>"Who has access to the data?"</em> That's the right question, but it's being asked to someone who thinks in terms of VMs, not architectural patterns.</p>
-
-        <p>The real problem isn't stupidity or incompetence. It's a <strong>capability gap</strong>: the organization doesn't have someone who can translate between EU policy pressure, compliance requirements, architectural constraints, and operational reality at the same time. If that conversation is happening somewhere, it hasn't reached the implementation teams yet. And if the gap exists in public documentation, it probably exists in the organization too.</p>
-
-        <h2>The Cost/Risk/Timeline Tradeoff</h2>
-
-        <p>If Sweden commits to sovereign Confluence:</p>
-
-        <p><strong>Cost</strong>: An ops team (3–5 people, ongoing). This costs more than the subscription to cloud Confluence, but you get data sovereignty. It's a legitimate tradeoff, not a bug.</p>
-
-        <p><strong>Risk</strong>: Operational burden. Who's on call at 3 AM when the database runs out of disk space? When a network card fails? When a security patch needs to be deployed? Cloud providers hire people to answer these questions. If you run your own infrastructure, you become that people.</p>
-
-        <p><strong>Timeline</strong>: Not months, not years. It depends entirely on your existing expertise. If you have experienced Kubernetes engineers, 18 months. If you don't, add another year of hiring and learning.</p>
-
-        <h2>The Pragmatic Path Forward: Hybrid</h2>
-
-        <p>Here's where the conversation shifts from theoretical to operational:</p>
-
-        <p><strong>You don't have to choose sovereign or cloud. You can choose both.</strong></p>
-
-        <p>Some workloads are genuinely safer on a US cloud provider (because the operational burden of running them yourself outweighs the risk). Some workloads—Teams, Confluence, citizen-facing services—belong in sovereign infrastructure.</p>
-
-        <p>AWS has a Stockholm region. Azure has a Stockholm region. Google Cloud doesn't, but it's worth checking the specific compliance requirements.</p>
-
-        <p>The pragmatic path:</p>
+        <p>Hybrid means choosing per workload:</p>
         <ul>
-          <li><strong>Critical, citizen-facing workloads</strong> (Confluence, Teams, databases) run on sovereign Kubernetes</li>
-          <li><strong>Auxiliary services</strong> (analytics, logging, external APIs) run on AWS Stockholm or equivalent</li>
-          <li><strong>Development and testing</strong> can run on cloud providers cheaply, then sync back to sovereign infrastructure</li>
+          <li>public SaaS where its control model is acceptable;</li>
+          <li>public or sovereign-provider infrastructure where local capacity and contractual controls are sufficient;</li>
+          <li>coordinated state IT or private cloud where stronger operational control is required;</li>
+          <li>replacement where the product cannot meet the requirement in any available deployment model.</li>
         </ul>
 
-        <p>This isn't perfect cloud architecture. It's pragmatic architecture. And pragmatism is what actually scales.</p>
+        <p>The <a href="https://digital-strategy.ec.europa.eu/en/policies/cloud-computing" target="_blank" rel="noreferrer">European Commission's June 2026 cloud policy work</a> reinforces this direction. The proposed Cloud and AI Development Act and wider Technological Sovereignty Package aim to expand European capacity, improve interoperability and switching, and prioritize highly secure capacity for critical use cases.</p>
+
+        <p>This did not begin in June 2026. AWS, for example, <a href="https://aws.amazon.com/blogs/aws/in-the-works-aws-european-sovereign-cloud/" target="_blank" rel="noreferrer">announced its European Sovereign Cloud in October 2023</a>. The dates matter. Provider initiatives and EU policy belong to the same longer movement, but one should not be presented as an immediate reaction to the other.</p>
+
+        <p>The EU direction also does not prove that every required sovereign service is available today. Policy pressure can arrive before deployable alternatives.</p>
+
+        <h2>The Implementation Gap</h2>
+
+        <p>What I see from the implementation level is not an absence of intelligence or effort. It is a translation problem.</p>
+
+        <p>The lawyer asks who can reach the data.</p>
+        <p>The infrastructure engineer answers where the VM is hosted.</p>
+        <p>The product owner asks whether Teams or Confluence will still work.</p>
+        <p>The procurement function asks which agreement can be used.</p>
+
+        <p>Each answer can be correct inside its own boundary and still fail to produce a decision.</p>
+
+        <p>The missing capability is someone, or some accountable forum, that can turn policy into a control profile, test real products against it, and return an actionable choice with named residual risks.</p>
+
+        <p>That is the expertise gap worth fixing.</p>
+
+        <p>Not "cloud expertise" in the narrow sense. Translation across law, information security, product architecture, operations, procurement, and continuity.</p>
 
         <h2>The Right Question</h2>
 
-        <p>Stop asking: <em>Should we go cloud or on-premises?</em></p>
+        <p>Stop asking:</p>
+        <blockquote><p>Should we go cloud or on-premises?</p></blockquote>
+        <p>Start asking:</p>
+        <blockquote><p>What must we control for this workload, and which available product and operating model can prove that control?</p></blockquote>
 
-        <p>Start asking: <em>What architectural properties do we need, and where can we actually get them?</em></p>
+        <p>Sweden does not need one answer for every workload. It needs a repeatable way to reach an answer, evidence that the chosen service behaves as promised, and a credible path out when the promise changes.</p>
 
-        <p>Sweden absolutely can have cloud architecture in sovereign infrastructure. But it requires naming the actual problem: <strong>an expertise gap, not a technology gap</strong>.</p>
-
-        <p>The fix isn't buying more servers. It's hiring the right people—or building the right team—to think across regulatory requirements, architectural constraints, and operational reality at the same time.</p>
-
-        <p>When that team exists, the conversation changes. The lawyers know what questions to ask. The engineers know what patterns to build. The decision-makers can decide based on fact instead of confusion.</p>
-
-        <p>And Sweden gets what it actually needs: infrastructure that's both sovereign and sane.</p>
+        <p>Cloud is configuration, not location.</p>
+        <p>Sovereignty is control, not ownership alone.</p>
+        <p>And strategy becomes real only when an implementation team can use it.</p>
 
         <hr>
 
         <h2>Brasklapp</h2>
 
-        <p>I don't know what's happening at the central government level. Strategic decisions, budget allocations, organizational priorities—that's opaque from where I sit.</p>
+        <p>I do not know every decision being made inside central government, every agency assessment, or every procurement now underway.</p>
 
-        <p>What I do know: This has been an open question for years. Ever since Microsoft made 365 non-optional, Swedish government agencies have been caught between compliance pressure and no clear alternative. Years have passed. Some decisions have been made about <em>when</em> US cloud is acceptable. But I haven't heard about a coherent cloud solution for governmental agencies.</p>
+        <p>I do know that the public record changed in May 2026: Sweden now has a cloud policy. This article therefore does not claim that no strategy exists. It asks what happens between that high-level policy and the technician, architect, lawyer, or product owner who has to make a specific service work.</p>
 
-        <p>That gap—years without visible progress toward a strategy—is what prompted this post. Whether the gap reflects decision-making caution, organizational friction, or competing priorities, I can't say. But the friction is real at the implementation level, and the policy pressure from the EU is real in June 2026.</p>
+        <p>The implementation friction described here is an observation from that level. It is not proof that no work is happening elsewhere.</p>
 
-        <p>This post reflects what's observable: the EU policy direction, the ground-level friction, and the missing link between them. If I'm wrong about what's happening behind closed doors, that's fine. But if you're a 2nd or 3rd line tech dealing with the same friction, I hope this framing helps clarify what you're actually seeing.</p>
+        <p>If there is a mature decision model, approved service catalogue, or shared platform that resolves these questions, making it visible to implementation teams is part of the solution.</p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li>NIST, <a href="https://csrc.nist.gov/pubs/sp/800/145/final" target="_blank" rel="noreferrer"><em>The NIST Definition of Cloud Computing, SP 800-145</em></a></li>
+          <li>Government Offices of Sweden, <a href="https://www.regeringen.se/informationsmaterial/2026/05/en-molnpolicy-for-sverige--for-okad-sakerhet-effektivitet-och-innovation-i-den-offentliga-forvaltningen/" target="_blank" rel="noreferrer"><em>En molnpolicy för Sverige</em></a>, 29 May 2026</li>
+          <li>IMY, <a href="https://www.imy.se/en/organisations/data-protection/this-applies-accordning-to-gdpr/transfer-of-data-to-a-third-country/" target="_blank" rel="noreferrer"><em>Transfer of personal data to a third country</em></a></li>
+          <li>European Data Protection Board, <a href="https://www.edpb.europa.eu/sme-data-protection-guide/international-data-transfers_en" target="_blank" rel="noreferrer"><em>International data transfers</em></a></li>
+          <li>Atlassian, <a href="https://www.atlassian.com/licensing/data-center-end-of-life" target="_blank" rel="noreferrer"><em>Data Center End of Life</em></a></li>
+          <li>Microsoft Learn, <a href="https://learn.microsoft.com/en-us/microsoftteams/teams-overview" target="_blank" rel="noreferrer"><em>Introduction to Microsoft Teams for admins</em></a></li>
+          <li>European Commission, <a href="https://digital-strategy.ec.europa.eu/en/policies/cloud-computing" target="_blank" rel="noreferrer"><em>Cloud computing</em></a></li>
+          <li>AWS, <a href="https://aws.amazon.com/blogs/aws/in-the-works-aws-european-sovereign-cloud/" target="_blank" rel="noreferrer"><em>In the Works: AWS European Sovereign Cloud</em></a>, 24 October 2023</li>
+          <li>AWS, <a href="https://aws.amazon.com/about-aws/global-infrastructure/regions_az/" target="_blank" rel="noreferrer"><em>Regions and Availability Zones</em></a></li>
+          <li>Microsoft Azure, <a href="https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/" target="_blank" rel="noreferrer"><em>Azure geographies</em></a></li>
+        </ul>
       </div>
     </article>
   </main>
