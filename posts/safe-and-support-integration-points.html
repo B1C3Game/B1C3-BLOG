@@ -34,7 +34,7 @@
       <p class="eyebrow">Operations & Framework Integration</p>
       <h1>SAFe and Support: Integration Points</h1>
       <p class="lead">Mapping where SAFe and ITIL operate differently—and what needs design to make them work together.</p>
-      <p class="post-date">Published: 2026-08-05</p>
+      <p class="post-date">Published: 2026-08-05 · Updated: 2026-08-25</p>
     </section>
     <article class="panel post reveal">
       <div class="post-content">
@@ -119,6 +119,35 @@
         </blockquote>
         <p>In organizational terms: SAFe optimizes for delivery predictability. ITIL optimizes for operational stability. Both are valuable. But if they don't talk about user reality, they might align perfectly to a flawed assumption.</p>
         <p><strong>Integration points ensure:</strong> SAFe decisions are informed by what support observes. ITIL processes remain intact, but information flows both ways.</p>
+
+        <h2>Integration Points in Practice</h2>
+        <p>Organizations are already building these integration points. Here are concrete implementations:</p>
+
+        <h3>Feedback Timing in Practice</h3>
+        <ul>
+          <li><strong>Staging window participation:</strong> Support observes deployments in staging 48 hours before production release. If UX confusion surfaces, it escalates to feature owner for last-minute clarity or rollback decision.</li>
+          <li><strong>Refinement rotation:</strong> One support engineer rotates into refinement every two weeks (not every meeting; doesn't overload product ceremony). Brings frontline signal: "Users are confused about this flow—can we simplify before build?"</li>
+          <li><strong>Risk-driven early validation:</strong> High-risk features (breaking changes, new UX patterns, integration points) require support walkthrough before PI commitment. Lower-risk features don't require this.</li>
+        </ul>
+
+        <h3>Signal Translation in Practice</h3>
+        <ul>
+          <li><strong>Feature-level ticket tracking:</strong> Support categorizes all incoming tickets by the feature they relate to in your tracking system (ADO, Jira, etc.). Weekly dashboard shows: "Feature X: 47 tickets; avg resolution 6 hours. Feature Y: 3 tickets; avg resolution 2 hours."</li>
+          <li><strong>Product handoff:</strong> That dashboard appears in product team standup every Friday. Product lead noticing "Feature X is generating 30% of support load" prompts conversation: "Is this a design gap? An onboarding problem? A legitimate workload we didn't forecast?"</li>
+          <li><strong>Tier 1 → Tier 2 → Product:</strong> Frontline support spots pattern (e.g., "15 tickets this week asking the same question"). Escalates to Tier 2/support lead. Support lead translates to product language and raises it in refinement: "Users don't understand this workflow. We're seeing the gap in support load."</li>
+        </ul>
+
+        <h3>Escalation Authority in Practice</h3>
+        <ul>
+          <li><strong>Support Team Lead in refinement:</strong> Not rotating frontline techs; instead, a support leader (who understands both support operations and product context) attends refinement. Role: <strong>observation and voice, not veto</strong>. Can raise concerns, ask questions, validate assumptions against user reality. But product owner still prioritizes.</li>
+          <li><strong>Tier structure alignment with transparency:</strong> Your Tier 1 tickets are visible to product (not hidden in support silo). Tier 2/3 engineers work with product teams directly on harder issues. This means support escalation patterns are already visible to product—no need for separate reporting.</li>
+        </ul>
+
+        <h3>Change Control in Practice</h3>
+        <ul>
+          <li><strong>Pre-release checklist:</strong> Release criteria include "Support confirms staging validation complete." If support finds blocker (e.g., "This breaks every user workflow we've seen"), it escalates to ART leadership who makes call: delay release or accept and communicate known issue?</li>
+          <li><strong>Post-incident learning loop:</strong> Incident postmortems include support perspective. Support explains what users encountered, what workarounds they're using, how long before severity becomes critical. This informs future design priorities.</li>
+        </ul>
 
         <h2>Integration Design: Questions for Onboarding</h2>
         <p>Rather than prescriptions, these are design questions that need answers before SAFe and support operate together:</p>
