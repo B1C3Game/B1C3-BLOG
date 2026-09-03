@@ -16,6 +16,8 @@ The goal is not to erase the archive. The goal is to make the public front door 
   - It contains personal relationship details.
   - It makes broad medical, political and AI-takeover claims without enough framing.
   - It does not support the current Aishna/B1C3 public direction.
+- [x] Create [NSFW-CURATION-QUEUE.md](NSFW-CURATION-QUEUE.md) before changing the large NSFW index.
+  - The first NSFW cut should remove unfinished material from public navigation while preserving source folders.
 
 ## Public Blog Tiers
 
