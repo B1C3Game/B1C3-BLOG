@@ -64,6 +64,7 @@ The following may remain available for provenance, but should not be presented a
 ## Next Action
 
 - [x] Remove T3 Capability-First Navigation and Genius As Process, Not Identity from the public index and dedicated public pages.
+- [x] Remove Information Moat Defense, Delegation Failure Cascade, Identity Threat Amplification, Credibility Erosion Mechanics and Accomplishment in Coherence from the public index and dedicated public pages.
 - [ ] Confirm whether the broader first cut should hide only `Candidate` and `Review required`, or all remaining `Campaign Import` items too.
 - [ ] Rewrite `nsfw/index.html` to show only the selected set plus an archive link.
 - [ ] Rebuild or trim NSFW sitemap entries to match the selected public set.
