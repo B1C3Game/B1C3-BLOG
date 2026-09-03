@@ -66,8 +66,9 @@ For every public item, ask:
 
 ## Next Cleanup Pass
 
-- [ ] Build a keep/archive/remove table for all blog cards.
-- [ ] Reduce the blog index to a curated current set plus an explicit archive link.
+- [x] Build a keep/archive/remove table for the first blog cleanup pass.
+- [x] Reduce the blog index to a curated current set; post files remain available but are no longer front-page/sitemap content.
+- [ ] Add an explicit archive page if the older writing should remain discoverable later.
 - [ ] Build a keep/archive/remove table for all NSFW cards.
 - [ ] Remove `Candidate`, `Review required` and unfinished `Campaign Import` cards from the public NSFW index.
 - [ ] Keep source assets and documentation unless they create a privacy or legal problem.
