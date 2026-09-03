@@ -19,6 +19,8 @@ The goal is not to erase the archive. The goal is to make the public front door 
 - [x] Remove `posts/the-note-is-inert-the-instruction-is-not.html` from public delivery.
   - The conceptual security essay was useful, but the live assessment included unnecessary details about Aishna's current visible attack surface.
   - The original remains available in Git history for later extraction into a private research note or a sanitized public essay.
+- [x] Archive `posts/first-follower.html` from the public index and sitemap.
+  - The piece is a useful historical founder text, but its recruitment/heroic framing no longer matches the current public posture.
 - [x] Create [NSFW-CURATION-QUEUE.md](NSFW-CURATION-QUEUE.md) before changing the large NSFW index.
   - The first NSFW cut should remove unfinished material from public navigation while preserving source folders.
 
